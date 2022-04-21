@@ -1,0 +1,53 @@
+label{
+    font-weight: 600;
+    }
+    .custom-control{
+    font-weight: normal;
+    }
+    .dropdown-toggle{
+    padding-left: 10px;
+    border-radius: 0px !important;
+    }
+    .dropdown.dropdown-lg .dropdown-menu {
+    padding: 15px;
+    }
+    .input-group .form-control{
+    width: 100%;
+    border-radius: 0.25rem !important;
+    }
+    .dropdown.dropdown-lg .dropdown-menu{
+    min-width: 320px;
+    }
+    .dropdown-menu{
+    box-shadow: 1px 4px 8px -1px #c1c1c1;
+    }
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff; 
+  border-bottom: 1px solid #d4d4d4; 
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+  background-color: #e9e9e9; 
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+  background-color: DodgerBlue !important; 
+  color: #ffffff; 
+}
+

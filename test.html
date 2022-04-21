@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Registracija</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+<link rel="stylesheet" href="Registruj djelatnost.css" media="screen">
+    <meta name="generator" content="Nicepage 4.2.6, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster:400">
+    
+    
+    
+    
+    
+    
+       
+
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "Pronađi majstora"
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Page 2">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+         <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+<link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css" rel="stylesheet" />
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+
+<style>
+.modal-header {
+	 background: #0b70bd;
+	 color: white;
+	 display: flex;
+	/* align-items: center;
+	 */
+	/* justify-content: center;
+	 */
+	 flex-flow: row-reverse;
+	 text-align: center;
+	 padding: 0 20px;
+	 padding-bottom: 5px;
+}
+ .modal-header .close {
+	 color: white;
+	 opacity: 1;
+	 display: flex;
+	 padding-top: 5px;
+}
+ h3#myModalLabel {
+	 flex: 1;
+	 text-transform: uppercase;
+}
+ h3#myModalLabel span {
+	 color: white;
+}
+ a, a.back, a.next, a.back:focus, a.next:focus, a.back:active, a.next:active, a.kraj {
+	 color: white;
+	 background: #0b70bd;
+	 padding: 10px 60px;
+	 margin: 0;
+	 font-weight: bold;
+}
+ a.back:hover, a.next:hover, a.kraj {
+	 color: #333;
+	 background-color: #e6e6e6;
+	 border-color: #adadad;
+}
+ .modal-footer {
+	 display: flex;
+	 justify-content: space-between;
+	 align-items: center;
+}
+ .left-footer {
+	 display: flex;
+}
+ .right-footer {
+	 flex: 1;
+}
+ .nav-justified {
+	 display: flex;
+}
+ .nav-justified li {
+	 flex: 1;
+}
+ 
+.container .card {
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    font-family: 'Lato', sans-serif;
+    border-radius: 10px
+}
+
+.container .card .form {
+    width: 100%;
+    height: 100%;
+    display: flex
+}
+
+
+.progres_bar {
+    counter-reset: progress 0
+}
+
+.progres_bar li {
+    list-style: none;
+    counter-increment: progress 1;
+    position: relative;
+    margin-bottom: 70px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px
+}
+
+.progres_bar li::before {
+    position: absolute;
+    content: counter(progress);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    border: 2px solid #1c3e6b;
+    background-color: #1c3e6b;
+    left: -40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 800;
+    top: -8px;
+    cursor: pointer;
+    transition: all 0.5s
+}
+
+.progres_bar li::after {
+    position: absolute;
+    content: '';
+    height: 60px;
+    width: 4px;
+    background-color: #1c3e6b;
+    left: -25px;
+    top: -70px
+}
+
+.progres_bar li:nth-child(1)::after {
+    display: none
+}
+
+.progres_bar li.active::after {
+    background-color: #fff !important
+}
+
+.progres_bar li.active {
+    color: #fff !important
+}
+
+.progres_bar li:nth-child(1) {
+    color: #fff
+}
+
+.progres_bar li:nth-child(1)::before {
+    background-color: #fff;
+    color: #000 !important
+}
+
+.progres_bar li.active::before {
+    background-color: #fff !important;
+    color: #000 !important
+}
+
+.container .card .right-side {
+    width: 60%;
+    background-color: #fff;
+    height: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px
+}
+
+.main {
+    display: none
+}
+
+.active {
+    display: block !important
+}
+
+.manage {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center
+}
+
+.manage p {
+    font-size: 14px;
+    margin-top: 10px
+}
+
+.input_div {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    width: 100%
+}
+
+.input_div textarea {
+    height: 90px;
+    width: 100%;
+    outline: 0;
+    border: 1px solid #b1b1b1;
+    border-radius: 5px;
+    padding: 5px;
+    resize: none;
+    box-sizing: border-box;
+    transition: all 0.5s
+}
+
+.input_text {
+    position: relative;
+    width: 100%
+}
+
+input[type="text"] {
+    height: 45px;
+    width: 100%;
+    outline: 0;
+    border: 1px solid #b1b1b1;
+    border-radius: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    transition: all 0.5s
+}
+
+input[type="password"] {
+    height: 45px;
+    width: 100%;
+    outline: 0;
+    border: 1px solid #b1b1b1;
+    border-radius: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    transition: all 0.5s;
+    padding-right: 30px
+}
+
+.input_text select {
+    height: 45px;
+    width: 100%;
+    outline: 0;
+    border: 1px solid #b1b1b1;
+    border-radius: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    transition: all 0.5s;
+    cursor: pointer;
+    color: black;
+}
+
+.sta select option:nth-child(1) {
+    display: none
+}
+
+input[type="number"] {
+    height: 45px;
+    width: 100%;
+    outline: 0;
+    border: 1px solid #b1b1b1;
+    border-radius: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    transition: all 0.5s
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0
+}
+
+.shown_name {
+    color: green !important
+}
+
+.fa-eye-slash {
+    position: absolute;
+    top: 14px;
+    right: 7px;
+    cursor: pointer;
+    transition: all 0.5s;
+    color: #b1b1b1
+}
+
+.fa-eye {
+    position: absolute;
+    top: 14px;
+    right: 7px;
+    cursor: pointer;
+    transition: all 0.5s;
+    color: #b1b1b1
+}
+
+.fa-eye {
+    position: absolute;
+    top: 14px;
+    right: 7px;
+    cursor: pointer;
+    transition: all 0.5s;
+    color: #b1b1b1
+}
+
+.input_text label {
+    pointer-events: none;
+    position: absolute;
+    top: 14px;
+    left: 5px;
+    font-size: 14px;
+    color: #2391ac;
+    transition: all 0.5s
+}
+
+.input_text input:focus {
+    border: 1px solid blue !important
+}
+
+.input_text input:focus~label,
+.input_text input:valid~label {
+    top: -17px;
+    left: 0;
+    color: #2391ac;
+    font-weight: 700
+}
+
+.agree {
+    margin-top: 30px;
+    display: flex;
+    gap: 5px;
+    width: 100% !important;
+    align-items: center
+}
+
+.agree span {
+    height: 20px;
+    width: 20px !important;
+    border-radius: 3px;
+    border: 1px solid #b1b1b1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    text-align: center
+}
+
+.agree span i {
+    width: 100%;
+    margin-top: 1px;
+    color: #fff
+}
+
+.agree p {
+    font-size: 14px
+}
+
+.agree p a {
+    text-decoration: none
+}
+
+.agree_green {
+    background-color: green !important
+}
+
+.agree_submit {
+    margin-top: 30px;
+    display: flex;
+    gap: 5px;
+    width: 100% !important
+}
+
+.agree_submit span {
+    height: 18px;
+    width: 20px !important;
+    border-radius: 3px;
+    border: 1px solid #b1b1b1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s
+}
+
+.agree_submit span i {
+    width: 100%;
+    margin-top: 1px;
+    color: #fff
+}
+
+.agree_submit p {
+    font-size: 14px
+}
+
+.agree_submit_green {
+    background-color: green !important
+}
+.button {
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+.button button:hover {
+    background-color: #2391ac !important
+}
+
+.step_1 {
+    margin-top: 60px
+}
+
+.step_2 {
+    gap: 10px
+}
+
+.m_top {
+    margin-top: 64px
+}
+
+.step_3 {
+    margin-top: 112px
+}
+
+.step_4 {
+    margin-top: 117px
+}
+
+.h4_txt {
+    text-align: center
+}
+
+.checkmark__circle {
+    stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+    stroke: #7ac142;
+    fill: none;
+    animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards
+}
+
+.checkmark {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: block;
+    stroke-width: 2;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+    margin: 10% auto;
+    box-shadow: inset 0px 0px 0px #7ac142;
+    animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both
+}
+
+.checkmark__check {
+    transform-origin: 50% 50%;
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards
+}
+
+@keyframes stroke {
+    100% {
+        stroke-dashoffset: 0
+    }
+}
+
+@keyframes scale {
+
+    0%,
+    100% {
+        transform: none
+    }
+
+    50% {
+        transform: scale3d(1.1, 1.1, 1)
+    }
+}
+
+@keyframes fill {
+    100% {
+        box-shadow: inset 0px 0px 0px 30px #7ac142
+    }
+}
+
+.warning {
+    border: 1px solid red !important
+}
+
+
+</style>
+
+
+  </head>
+  <body class="u-body" >
+    <div class="container" style="display: grid;align-content: center; padding: 20px;">
+        <br><br>
+        <p style="padding: 20px;text-align: center;">Ukoliko mislite da je ovo Vaš idealni majstor, kliknite na dugme ispod i kontaktirajte ga, tako što ćete popuniti kratku formu</p>
+        <hr>
+    
+        <!-- Modal Trigger -->
+        <a href="#modalMultiStep" role="button" style="margin-left: 25%;width: 50%;color: white;background: #0b70bd;" class="btn btn-default btn-lg trigger" data-backdrop="static" data-keyboard="false" data-toggle="modal">Pošalji upit</a>
+    
+        <!-- Modal -->
+        <div id="modalMultiStep" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+    
+                    <!-- Modal Header  (1/3) -->
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h3 id="myModalLabel">Pošalji upit</h3>
+                    </div>
+    
+                    <!-- Modal Body (2/3) -->
+                    <div class="modal-body" id="serviceModalMultiStep">
+    
+                        <!-- Progress Bar -->
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="3" style="width: 20%;">
+                            </div>
+                        </div>
+    
+                        <!-- Tab Steps-->
+                        <div class="navbar" style="margin: 0%;">
+                            <div class="navbar-inner">
+                                <ul class="nav nav-tabs nav-justified">
+                                    <li class="active">
+                                        <a href="#step1" data-toggle="tab" data-step="1">Korak 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#step2" data-toggle="tab" data-step="2">Korak 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#step3" data-toggle="tab" data-step="3">Korak 3</a>
+                                    </li>
+                                    <li>
+                                        <a href="#step4" data-toggle="tab" data-step="4">Korak 4</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <!-- Tab Content -->
+                        <div class="tab-content">
+    
+                            <!-- Tab 1 -->
+                            <div class="tab-pane fade in active" id="step1">
+                                <div class="well">
+                                    <div class="input_div">
+                                        <div class="input_text"> <input class="written_name" type="text" id="name" onchange="this.classList.remove('warning');" require required> <label>Ime</label> </div>
+                                        <div class="input_text"> <input type="text" id="lname" onchange="this.classList.remove('warning');" require required> <label>Prezime</label> </div>
+                                    </div>
+                                    <div class="input_div">
+                                        <div class="input_text"> <input type="text" id="email" onchange="this.classList.remove('warning');" require required> <label>Email</label> </div>
+                                        <div class="input_text"> <input type="text" id="telefon" onchange="this.classList.remove('warning');" require required> <label>Telefon</label> </div>
+                                    </div>
+                                    
+                                    <div class="input_div sta">
+                                        <div class="input_text form-group"> <select id="lok" onchange="this.classList.remove('warning');" class="form-control" require required>
+                                                <option value="">Lokacija</option>
+                                                <option value="Banovići">Banovići
+                                                </option><option value="Banja Luka">Banja Luka
+                                                </option><option value="Berkovići">Berkovići
+                                                </option><option value="Bihać">Bihać
+                                                </option><option value="Bijeljina">Bijeljina
+                                                </option><option value="Bileća">Bileća
+                                                </option><option value="Blagaj">Blagaj
+                                                </option><option value="Bosanska Kostajnica">Bosanska Kostajnica
+                                                </option><option value="Bosanska Krupa">Bosanska Krupa
+                                                </option><option value="Bosanska Otoka">Bosanska Otoka
+                                                </option><option value="Bosanski Brod">Bosanski Brod
+                                                </option><option value="Bosanski Petrovac">Bosanski Petrovac
+                                                </option><option value="Bosansko Grahovo">Bosansko Grahovo
+                                                </option><option value="Bratunac">Bratunac
+                                                </option><option value="Brčko">Brčko
+                                                </option><option value="Breza">Breza
+                                                </option><option value="Bugojno">Bugojno
+                                                </option><option value="Busovača">Busovača
+                                                </option><option value="Bužim">Bužim
+                                                
+                                                </option><option value="Cazin">Cazin
+                                                
+                                                </option><option value="Čajniče">Čajniče
+                                                </option><option value="Čapljina">Čapljina
+                                                </option><option value="Čelić">Čelić
+                                                </option><option value="Čelinac">Čelinac
+                                                </option><option value="Čitluk">Čitluk
+                                                
+                                                </option><option value="Derventa">Derventa
+                                                </option><option value="Doboj">Doboj
+                                                </option><option value="Doboj Istok">Doboj Istok
+                                                </option><option value="Doboj Jug">Doboj Jug
+                                                </option><option value="Dobretići">Dobretići
+                                                </option><option value="Domaljevac / Šamac (Bosanski Šamac)">Domaljevac / Šamac (Bosanski Šamac)
+                                                </option><option value="Donji Vakuf">Donji Vakuf
+                                                </option><option value="Drvar">Drvar
+                                                
+                                                </option><option value="Foča">Foča
+                                                </option><option value="Foča-Ustikolina">Foča-Ustikolina
+                                                </option><option value="Fojnica">Fojnica
+                                                
+                                                </option><option value="Gacko">Gacko
+                                                </option><option value="Glamoč">Glamoč
+                                                </option><option value="Glavatičevo">Glavatičevo
+                                                </option><option value="Goražde">Goražde
+                                                </option><option value="Gornji Vakuf / Uskoplje">Gornji Vakuf / Uskoplje
+                                                </option><option value="Gračanica">Gračanica
+                                                </option><option value="Gradačac">Gradačac
+                                                </option><option value="Gradiška (Bosanska Gradiška)">Gradiška (Bosanska Gradiška)
+                                                </option><option value="Grude">Grude
+                                                
+                                                </option><option value="Hadžići">Hadžići
+                                                </option><option value="Han Pijesak">Han Pijesak
+                                                
+                                                </option><option value="Ilidža">Ilidža
+                                                </option><option value="Ilijaš">Ilijaš
+                                                </option><option value="Istočno Sarajevo">Istočno Sarajevo
+                                                
+                                                </option><option value="Jablanica">Jablanica
+                                                </option><option value="Jajce">Jajce
+                                                </option><option value="Jelah">Jelah
+                                                
+                                                </option><option value="Kakanj">Kakanj
+                                                </option><option value="Kalesija">Kalesija
+                                                </option><option value="Kalinovik">Kalinovik
+                                                </option><option value="Kiseljak">Kiseljak
+                                                </option><option value="Kladanj">Kladanj
+                                                </option><option value="Ključ">Ključ
+                                                </option><option value="Kneževo (Skender Vakuf)">Kneževo (Skender Vakuf)
+                                                </option><option value="Konjic">Konjic
+                                                </option><option value="Kotor Varoš">Kotor Varoš
+                                                </option><option value="Kozarska Dubica (Bosanska Dubica)">Kozarska Dubica (Bosanska Dubica)
+                                                </option><option value="Kraljeva Sutjeska">Kraljeva Sutjeska
+                                                </option><option value="Kreševo">Kreševo
+                                                </option><option value="Krupa na Uni">Krupa na Uni
+                                                </option><option value="Kulen Vakuf">Kulen Vakuf
+                                                </option><option value="Kupres">Kupres
+                                                
+                                                </option><option value="Laktaši">Laktaši
+                                                </option><option value="Livno">Livno
+                                                </option><option value="Lopare">Lopare
+                                                </option><option value="Lukavac">Lukavac
+                                                
+                                                </option><option value="Ljubinje">Ljubinje
+                                                </option><option value="Ljubuški">Ljubuški
+                                                
+                                                </option><option value="Maglaj">Maglaj
+                                                </option><option value="Međugorje">Međugorje
+                                                </option><option value="Milići">Milići
+                                                </option><option value="Modriča">Modriča
+                                                </option><option value="Mostar">Mostar
+                                                </option><option value="Mrkonjić Grad">Mrkonjić Grad
+                                                
+                                                </option><option value="Neum">Neum
+                                                </option><option value="Nevesinje">Nevesinje
+                                                </option><option value="Novi grad (Bosanski Novi)">Novi grad (Bosanski Novi)
+                                                </option><option value="Novi Travnik">Novi Travnik
+                                                
+                                                </option><option value="Odžak">Odžak
+                                                </option><option value="Olovo">Olovo
+                                                </option><option value="Orašje">Orašje
+                                                </option><option value="Osmaci">Osmaci
+                                                
+                                                </option><option value="Pale">Pale
+                                                </option><option value="Petrovo (Bosansko Petrovo Selo)">Petrovo (Bosansko Petrovo Selo)
+                                                </option><option value="Počitelj">Počitelj
+                                                </option><option value="Posušje">Posušje
+                                                </option><option value="Pale-Prača">Pale-Prača
+                                                </option><option value="Prijedor">Prijedor
+                                                </option><option value="Prnjavor">Prnjavor
+                                                </option><option value="Prozor – Rama">Prozor – Rama
+                                                </option><option value="Prusac">Prusac
+                                                
+                                                </option><option value="Ravno">Ravno
+                                                </option><option value="Rogatica">Rogatica
+                                                </option><option value="Rudo">Rudo
+                                                
+                                                </option><option value="Sanski Most">Sanski Most
+                                                </option><option value="Sapna">Sapna
+                                                </option><option value="Sarajevo">Sarajevo
+                                                </option><option value="Sokolac">Sokolac
+                                                </option><option value="Srbac">Srbac
+                                                </option><option value="Srebrenica">Srebrenica
+                                                </option><option value="Srebrenik">Srebrenik
+                                                </option><option value="Stolac">Stolac
+                                                
+                                                </option><option value="Šamac / Domaljevac (Bosanski Šamac)">Šamac / Domaljevac (Bosanski Šamac)
+                                                </option><option value="Šekovići">Šekovići
+                                                </option><option value="Šipovo">Šipovo
+                                                </option><option value="Široki Brijeg">Široki Brijeg
+                                                
+                                                </option><option value="Teočak">Teočak
+                                                </option><option value="Teslić">Teslić
+                                                </option><option value="Tešanj">Tešanj
+                                                </option><option value="Tomislavgrad (Duvno)">Tomislavgrad (Duvno)
+                                                </option><option value="Travnik">Travnik
+                                                </option><option value="Trebinje">Trebinje
+                                                </option><option value="Trnovo">Trnovo
+                                                </option><option value="Turbe">Turbe
+                                                </option><option value="Tuzla">Tuzla
+                                                
+                                                </option><option value="Ugljevik">Ugljevik
+                                                </option><option value="Usora">Usora
+                                                </option><option value="Ustiprača">Ustiprača
+                                                
+                                                </option><option value="Vareš">Vareš
+                                                </option><option value="Velika Kladuša">Velika Kladuša
+                                                </option><option value="Visoko">Visoko
+                                                </option><option value="Višegrad">Višegrad
+                                                </option><option value="Vitez">Vitez
+                                                </option><option value="Vlasenica">Vlasenica
+                                                </option><option value="Vogošća">Vogošća
+                                                </option><option value="Vukosavlje">Vukosavlje
+                                                
+                                                </option><option value="Zavidovići">Zavidovići
+                                                </option><option value="Zenica">Zenica
+                                                </option><option value="Zvornik">Zvornik
+                                                
+                                                </option><option value="Žepa">Žepa
+                                                </option><option value="Žepče">Žepče
+                                                </option><option value="Živinice">Živinice
+                                                </option>
+                                            </select> </div>
+                                        <div class="input_text"> <input type="text" id="adresa" onchange="this.classList.remove('warning');" require required> <label>Adresa (ulica i broj)</label> </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- Tab 2 -->
+                            <div class="tab-pane fade" id="step2">
+                                <div class="well">
+                                    <label>Kada Vam je potrebna usluga</label>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="optradio" checked>Hitno</label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="optradio">U narednih 30 dana</label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="optradio">U narednih 90 dana</label>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- Tab 3 -->
+                            <div class="tab-pane fade" id="step3">
+                                <div class="well">
+                                    <label>Koja usluga Vam je potrebna</label>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" checked="true" id="usluga1" value="">Usluga 1</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" id="usluga2" value="">Usluga 2</label>
+                                    </div>
+                                    <div class="checkbox disabled">
+                                        <label>
+                                            <input type="checkbox" value="" disabled>Usluga 3</label>
+                                    </div>
+                                    <div class="checkbox disabled">
+                                        <label>
+                                            <input type="checkbox" value="" disabled>Usluga 4</label>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- Tab 4 -->
+                            <div class="tab-pane fade" id="step4">
+                                <div class="well">
+                                    <label>Poruka ili napomena za majstora</label>
+                                    <textarea class="form-control input-lg" rows="5" id="message"></textarea>
+                                    
+                                </div>
+                            </div>
+    
+                            <!-- Tab 5 -->
+                            
+    
+                        </div>
+                    </div>
+    
+                    <!-- Modal Footer (3/3) -->
+                    <div class="modal-footer">
+                        <div class="right-footer">
+                            <a class="btn btn-default back" href="#">Nazad</a>
+                            <a class="btn btn-default next" href="#">Dalje</a>
+                            <a class="btn btn-default kraj agree_green" data-dismiss="modal" aria-hidden="true" style="color: white;" onclick="zavrsi()">Pošalji</a>
+                            
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    
+    
+
+    <script>
+      $(document).ready(function() {
+          $('#usluga1').prop( "checked", true );
+	var nStep = 4;
+	var firstTab = $(".tab-pane:first-child").attr("id");
+	var prevTab = $(".tab-pane.active")
+		.prev()
+		.attr("id");
+	var nextTab = $(".tab-pane.active")
+		.next()
+		.attr("id");
+	var lastTab = $(".tab-pane:last-child").attr("id");
+
+	$(".progress-bar").text("Korak 1 od " + nStep);
+	$(".back, .first, .kraj").hide();
+
+	$(".next").click(function() {
+        var ime = $('#name').val();
+        var prez = $('#lname').val();
+        var em = $('#email').val();
+        var te = $('#telefon').val();
+        var adr = $('#adresa').val();
+        var lok = $('#lok').val();
+        var us1 = $('#usluga1').is(":checked");
+        var us2 = $('#usluga2').is(":checked");
+        var valid=1;
+        if(ime ==""){
+            document.getElementById("name").classList.add('warning');
+            valid=0;
+        }
+        if(prez==""){
+            document.getElementById("lname").classList.add('warning');
+            valid=0;
+        }
+        if(em==""){
+            document.getElementById("email").classList.add('warning');
+            valid=0;
+        }
+        if(te==""){
+            document.getElementById("telefon").classList.add('warning');
+            valid=0;
+        }
+        if(adr==""){
+            document.getElementById("adresa").classList.add('warning');
+            valid=0;
+        }
+        if(lok==""){
+            document.getElementById("lok").classList.add('warning');
+            valid=0;
+        }
+        if (isNaN(te)) {
+            document.getElementById("telefon").classList.add('warning');
+            valid=0;
+            alert("Unesite samo cifre broja telefona");
+        }
+        if(us1==false && us2==false){
+            alert("Odaberite jednu uslugu");
+            valid=0;
+        }
+        if(valid==1){
+            var nextId = $(".tab-pane.active")
+                .next()
+                .attr("id");
+            // alert(nextId + ' ? ' + lastTab);
+            $('[href="#' + nextId + '"]').tab("show");
+
+            $(".back, .first").css("display", "unset");
+            if (nextId == lastTab) {
+                $(".next").hide();
+                $(".kraj").show();
+                // show submit button
+            }
+        }
+		return false;
+	});
+
+	$(".back").click(function() {
+		var backId = $(".tab-pane.active")
+			.prev()
+			.attr("id");
+		// alert(backId);
+		$('[href="#' + backId + '"]').tab("show");
+
+		$(".next").css("display", "unset");
+		if (backId === "step1") {
+			$(".back, .first").css("display", "none");
+		}
+        $(".kraj").css("display", "none");
+		return false;
+	});
+
+	$(".nav-tabs li:first-child").click(function() {
+		$(".back, .first").css("display", "none");
+		$(".next").css("display", "unset");
+	});
+
+	$(".nav-tabs li:not(:first-child)").click(function() {
+		$(".back, .first").css("display", "unset");
+	});
+
+	$(".nav-tabs li:last-child").click(function() {
+		$(".next").css("display", "none");
+	});
+
+	$(".nav-tabs li:not(:last-child)").click(function() {
+		$(".next").css("display", "unset");
+	});
+
+	$('a[data-toggle="tab"]').on("shown.bs.tab", function(e) {
+		var step = $(e.target).data("step");
+		var percent = parseInt(step) / nStep * 100;
+
+		$(".progress-bar").css({ width: percent + "%" });
+		$(".progress-bar").text("Korak " + step + " od " + nStep);
+	});
+
+	$(".first").click(function() {
+		$('[href="#' + firstTab + '"]').tab("show");
+		$(".back, .first").css("display", "none");
+		$(".next").css("display", "unset");
+	});
+});
+
+    function zavrsi(){
+        alert("Upit trenutno nije moguće poslati");
+    }
+      </script>
+
+
+ </body>
+</html>

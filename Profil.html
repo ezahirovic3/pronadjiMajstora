@@ -1,0 +1,1436 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Profil</title>
+    <link rel="stylesheet" href="nicepage2.css" media="screen">
+<link rel="stylesheet" href="Profil.css" media="screen">
+    <script class="u-script" type="text/javascript" src="nicepage2.js" defer=""></script>
+    <meta name="generator" content="Nicepage 4.2.6, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster:400|Allerta:400">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "Pronađi majstora"
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Page 2">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://www.nadjimajstora.rs/plugins/jquery-3.2.1.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+
+<style>
+  .main {
+    display: none
+}
+
+.active {
+    display: block !important
+}
+
+.manage {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center
+}
+
+.manage p {
+    font-size: 14px;
+    margin-top: 10px
+}
+
+.input_div {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    width: 100%
+}
+
+.input_div textarea {
+    height: 90px;
+    width: 100%;
+    outline: 0;
+    border: 1px solid #b1b1b1;
+    border-radius: 5px;
+    padding: 5px;
+    resize: none;
+    box-sizing: border-box;
+    transition: all 0.5s
+}
+
+.input_text {
+    position: relative;
+    width: 100%
+}
+
+input[type="text"] {
+    height: 45px;
+    width: 100%;
+    outline: 0;
+    border: 1px solid #b1b1b1;
+    border-radius: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    transition: all 0.5s
+}
+
+input[type="password"] {
+    height: 45px;
+    width: 100%;
+    outline: 0;
+    border: 1px solid #b1b1b1;
+    border-radius: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    transition: all 0.5s;
+    padding-right: 30px
+}
+
+.input_text select {
+    height: 45px;
+    width: 100%;
+    outline: 0;
+    border: 1px solid #b1b1b1;
+    border-radius: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    transition: all 0.5s;
+    cursor: pointer;
+    color: black;
+}
+
+.sta select option:nth-child(1) {
+    display: none
+}
+
+input[type="number"] {
+    height: 45px;
+    width: 100%;
+    outline: 0;
+    border: 1px solid #b1b1b1;
+    border-radius: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    transition: all 0.5s
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0
+}
+
+.shown_name {
+    color: green !important
+}
+
+.fa-eye-slash {
+    position: absolute;
+    top: 14px;
+    right: 7px;
+    cursor: pointer;
+    transition: all 0.5s;
+    color: #b1b1b1
+}
+
+.fa-eye {
+    position: absolute;
+    top: 14px;
+    right: 7px;
+    cursor: pointer;
+    transition: all 0.5s;
+    color: #b1b1b1
+}
+
+.fa-eye {
+    position: absolute;
+    top: 14px;
+    right: 7px;
+    cursor: pointer;
+    transition: all 0.5s;
+    color: #b1b1b1
+}
+
+.input_text label {
+    pointer-events: none;
+    position: absolute;
+    top: 14px;
+    left: 5px;
+    font-size: 14px;
+    color: #2391ac;
+    transition: all 0.5s
+}
+
+.input_text input:focus {
+    border: 1px solid blue !important
+}
+
+.input_text input:focus~label,
+.input_text input:valid~label {
+    top: -17px;
+    left: 0;
+    color: #2391ac;
+    font-weight: 700
+}
+
+.agree {
+    margin-top: 30px;
+    display: flex;
+    gap: 5px;
+    width: 100% !important;
+    align-items: center
+}
+
+.agree span {
+    height: 20px;
+    width: 20px !important;
+    border-radius: 3px;
+    border: 1px solid #b1b1b1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    text-align: center
+}
+
+.agree span i {
+    width: 100%;
+    margin-top: 1px;
+    color: #fff
+}
+
+.agree p {
+    font-size: 14px
+}
+
+.agree p a {
+    text-decoration: none
+}
+
+.agree_green {
+    background-color: green !important
+}
+
+.agree_submit {
+    margin-top: 30px;
+    display: flex;
+    gap: 5px;
+    width: 100% !important
+}
+
+.agree_submit span {
+    height: 18px;
+    width: 20px !important;
+    border-radius: 3px;
+    border: 1px solid #b1b1b1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s
+}
+
+.agree_submit span i {
+    width: 100%;
+    margin-top: 1px;
+    color: #fff
+}
+
+.agree_submit p {
+    font-size: 14px
+}
+
+.agree_submit_green {
+    background-color: green !important
+}
+.button {
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+.button button:hover {
+    background-color: #2391ac !important
+}
+
+.step_1 {
+    margin-top: 60px
+}
+
+.step_2 {
+    gap: 10px
+}
+
+.m_top {
+    margin-top: 64px
+}
+
+.step_3 {
+    margin-top: 112px
+}
+
+.step_4 {
+    margin-top: 117px
+}
+
+.h4_txt {
+    text-align: center
+}
+
+.checkmark__circle {
+    stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+    stroke: #7ac142;
+    fill: none;
+    animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards
+}
+
+.checkmark {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: block;
+    stroke-width: 2;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+    margin: 10% auto;
+    box-shadow: inset 0px 0px 0px #7ac142;
+    animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both
+}
+
+.checkmark__check {
+    transform-origin: 50% 50%;
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards
+}
+
+@keyframes stroke {
+    100% {
+        stroke-dashoffset: 0
+    }
+}
+
+@keyframes scale {
+
+    0%,
+    100% {
+        transform: none
+    }
+
+    50% {
+        transform: scale3d(1.1, 1.1, 1)
+    }
+}
+
+@keyframes fill {
+    100% {
+        box-shadow: inset 0px 0px 0px 30px #7ac142
+    }
+}
+
+.warning {
+    border: 1px solid red !important
+}
+
+@media (max-width:750px) {
+    .container .card {
+        max-width: 350px;
+        height: auto;
+        margin: 50px 0
+    }
+
+    .container .card .right-side {
+        width: 100%;
+        border-radius: 10px
+    }
+
+    .container .card .left-side {
+        display: none
+    }
+
+    .input_div {
+        display: block
+    }
+
+    .input_text {
+        margin-top: 40px
+    }
+}
+</style>
+
+  </head>
+  <body class="u-body"><header class=" u-clearfix u-header u-section-row-container" id="sec-d0c5" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">
+    <div class="u-section-rows">
+      <div class="u-clearfix u-custom-color-2 u-section-row u-section-row-1 u-sticky u-sticky-6f2b " data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="" id="sec-0995">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h3 class="u-custom-font u-font-lobster u-headline u-text u-text-1">
+          <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-btn-1" href="Home.html">Pronađi majstora</a>
+        </h3>
+        <nav class="u-dropdown-icon u-menu u-menu-dropdown u-offcanvas u-menu-1">
+          <div class="menu-collapse" style="font-size: 1.25rem; letter-spacing: 0px; font-weight: 700;">
+            <a class="u-button-style u-custom-active-border-color u-custom-active-color u-custom-border u-custom-border-color u-custom-borders u-custom-hover-border-color u-custom-hover-color u-custom-left-right-menu-spacing u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link" href="#">
+              <svg viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;"><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</symbol>
+</defs></svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-nav u-spacing-25 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-nav-link u-text-active-white  active" href="Kategorije.html" style="padding: 10px;">Kategorije</a>
+              <div class="u-nav-popup">
+                <ul class="u-h-spacing-30 u-nav u-unstyled u-v-spacing-10 u-nav-2">
+                  <li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Podkategorija Građevinski.html">Građevinski radovi</a><div class="u-nav-popup"><ul class="u-h-spacing-30 u-nav u-unstyled u-v-spacing-10 u-nav-3">
+                    <li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Građevinski radovi.html?lokacija=&podkategorija=Moler">Moler</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Građevinski radovi.html?lokacija=&podkategorija=Gipsar">Gipsar</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Građevinski radovi.html?lokacija=&podkategorija=Fasader">Fasader</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Građevinski radovi.html?lokacija=&podkategorija=Zidar">Zidar</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Građevinski radovi.html?lokacija=&podkategorija=Parketar">Parketar</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Građevinski radovi.html?lokacija=&podkategorija=Keramičar">Keramičar</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Građevinski radovi.html?lokacija=&podkategorija=Građevinski limar">Građevinski limar</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Građevinski radovi.html?lokacija=&podkategorija=Varilac">Varilac</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Građevinski radovi.html?lokacija=&podkategorija=Građevinski stolar">Građevinski stolar</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Građevinski radovi.html?lokacija=&podkategorija=Izolater">Izolater</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Građevinski radovi.html?lokacija=&podkategorija=Tesar">Tesar</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Građevinski radovi.html?lokacija=&podkategorija=Izdrada bazena i fontana">Izrada bazena i fontana</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Građevinski radovi.html?lokacija=&podkategorija=Pomoćni radnik">Pomoćni radnik</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Građevinski radovi.html?lokacija=&podkategorija=Postavljanje podnih površina">Postavljanje podnih površina</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Građevinski radovi.html?lokacija=&podkategorija=Sječenje i bušenje">Sječenje i bušenje</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Građevinski radovi.html?lokacija=&podkategorija=Armirač">Armirač</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Građevinski radovi.html?lokacija=&podkategorija=Bravar-monter">Bravar-monter</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Građevinski radovi.html?lokacija=&podkategorija=">Sve podkategorije</a>
+</li></ul>
+</div>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Podkategorija Elektrika.html">Elektrika</a><div class="u-nav-popup">
+<ul class="u-h-spacing-30 u-nav u-unstyled u-v-spacing-10 u-nav-4"><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Elektrika.html?lokacija=&podkategorija=Električar">Električar</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Elektrika.html?lokacija=&podkategorija=Vikler elektromotora">Vikler elektromotora</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Elektrika.html?lokacija=&podkategorija=Serviser liftova">Serviser liftova</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white"  href="Elektrika.html?lokacija=&podkategorija=Monter klima uređaja">Monter klima uređaja</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Elektrika.html?lokacija=&podkategorija=Audio-video serviser">Audio-video serviser</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Elektrika.html?lokacija=&podkategorija=Serviser mobilnih telefona">Serviser mobilnih telefona</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Elektrika.html?lokacija=&podkategorija=Serviser računara">Serviser računara</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Elektrika.html?lokacija=&podkategorija=">Sve podkategorije</a>
+</li></ul>
+</div>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Podkategorija Održavanje.html">Održavanje</a><div class="u-nav-popup">
+<ul class="u-h-spacing-30 u-nav u-unstyled u-v-spacing-10 u-nav-5"><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Održavanje.html?lokacija=&podkategorija=Spremačica">Spremačica</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Održavanje.html?lokacija=&podkategorija=Čistač">Čistač</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Održavanje.html?lokacija=&podkategorija=Perač podnih površina">Perač podnih površina</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Održavanje.html?lokacija=&podkategorija=Odžačar">Odžačar</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Održavanje.html?lokacija=&podkategorija=Baštovan">Baštovan</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Održavanje.html?lokacija=&podkategorija=Drvosječa">Drvosječa</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Održavanje.html?lokacija=&podkategorija=Visinski radnik">Visinski radnik</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Održavanje.html?lokacija=&podkategorija=Perač fasada">Perač fasada</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Održavanje.html?lokacija=&podkategorija=Haus majstor / Domar">Haus majstor/Domar</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white"  href="Održavanje.html?lokacija=&podkategorija=">Sve podkategorije</a>
+</li></ul>
+</div>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Podkategorija Cjevi.html">Cjevne instalacije</a><div class="u-nav-popup">
+<ul class="u-h-spacing-30 u-nav u-unstyled u-v-spacing-10 u-nav-6"><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Cjevne instalacije.html?lokacija=&podkategorija=Vodoinstalater">Vodoinstalater</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Cjevne instalacije.html?lokacija=&podkategorija=Monter grijnih instalacija">Monter grijnih instalacija</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Cjevne instalacije.html?lokacija=&podkategorija=Ventilacioni sistemi">Ventilacioni sistemi</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Cjevne instalacije.html?lokacija=&podkategorija=">Sve podkategorije</a>
+</li></ul>
+</div>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Podkategorija Obrada.html">Obrada materijala</a><div class="u-nav-popup">
+<ul class="u-h-spacing-30 u-nav u-unstyled u-v-spacing-10 u-nav-7"><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Obrada materijala.html?lokacija=&podkategorija=Ključar">Ključar</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Obrada materijala.html?lokacija=&podkategorija=Tapetar">Tapetar</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Obrada materijala.html?lokacija=&podkategorija=Metalostruga">Metalostrugar</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Obrada materijala.html?lokacija=&podkategorija=Stolar">Stolar</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Obrada materijala.html?lokacija=&podkategorija=Staklorezac">Staklorezac</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Obrada materijala.html?lokacija=&podkategorija=Grnčar">Grnčar</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Obrada materijala.html?lokacija=&podkategorija=Kamenorezac">Kamenorezac</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Obrada materijala.html?lokacija=&podkategorija=Mašin-bravar">Mašin-bravar</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Obrada materijala.html?lokacija=&podkategorija=Kovač">Kovač</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Obrada materijala.html?lokacija=&podkategorija=Površinska obrada">Površinska obrada</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Obrada materijala.html?lokacija=&podkategorija=Livac">Livac</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Obrada materijala.html?lokacija=&podkategorija=Uramljivač">Uramljivač</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Obrada materijala.html?lokacija=&podkategorija=Metaloglodač">Metaloglodač</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Obrada materijala.html?lokacija=&podkategorija=Metalooštrač">Metalooštrač</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Obrada materijala.html?lokacija=&podkategorija=Pečatorezac">Pečatorezac</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Obrada materijala.html?lokacija=&podkategorija=">Sve podkategorije</a>
+</li></ul>
+</div>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Podkategorija Garderoba.html">Garderoba i nakit</a><div class="u-nav-popup">
+<ul class="u-h-spacing-30 u-nav u-unstyled u-v-spacing-10 u-nav-8"><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Garderoba i nakit.html?lokacija=&podkategorija=Krojač">Krojač</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Garderoba i nakit.html?lokacija=&podkategorija=Obućar">Obućar</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Garderoba i nakit.html?lokacija=&podkategorija=Tašner">Tašner</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Garderoba i nakit.html?lokacija=&podkategorija=Sajdžija - Časovničar">Sajdžija-Časovničar</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Garderoba i nakit.html?lokacija=&podkategorija=Juvelir - Zlatar">Juvelir-Zlatar</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Garderoba i nakit.html?lokacija=&podkategorija=Mašinski vez">Mašinski vez</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Garderoba i nakit.html?lokacija=&podkategorija=Ručni vez">Ručni vez</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Garderoba i nakit.html?lokacija=&podkategorija=Krznar">Krznar</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Garderoba i nakit.html?lokacija=&podkategorija=Šeširdžija">Šeširdžija</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Garderoba i nakit.html?lokacija=&podkategorija=Serviser šivaćih mašina">Serviser šivaćih mašina</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Garderoba i nakit.html?lokacija=&podkategorija=">Sve podkategorije</a>
+</li></ul>
+</div>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Podkategorija Vozila.html">Održavanje vozila</a><div class="u-nav-popup">
+<ul class="u-h-spacing-30 u-nav u-unstyled u-v-spacing-10 u-nav-9"><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Održavanje vozila.html?lokacija=&podkategorija=Auto električar">Auto električar</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Održavanje vozila.html?lokacija=&podkategorija=Auto limar">Auto limar</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Održavanje vozila.html?lokacija=&podkategorija=Auto bravar">Auto bravar</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Održavanje vozila.html?lokacija=&podkategorija=Auto mehaničar">Auto mehaničar</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Održavanje vozila.html?lokacija=&podkategorija=Serviser autogas sistema">Serviser autogas sistema</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Održavanje vozila.html?lokacija=&podkategorija=Auto grafičar">Auto grafičar</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Održavanje vozila.html?lokacija=&podkategorija=Auto tapetar">Auto tapetar</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Održavanje vozila.html?lokacija=&podkategorija=Auto perač">Auto perač</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Održavanje vozila.html?lokacija=&podkategorija=Vulkanizer">Vulkanizer</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Održavanje vozila.html?lokacija=&podkategorija=Šlep služba">Šlep služba</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Održavanje vozila.html?lokacija=&podkategorija=Serviser trapa">Serviser trapa</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Održavanje vozila.html?lokacija=&podkategorija=Auto stakla">Auto stakla</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Održavanje vozila.html?lokacija=&podkategorija=Auto plastičar">Auto plastičar</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Održavanje vozila.html?lokacija=&podkategorija=Serviser auspuha">Serviser auspuha</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Održavanje vozila.html?lokacija=&podkategorija=Serviser motocikala">Serviser motocikala</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Održavanje vozila.html?lokacija=&podkategorija=">Sve podkategorije</a>
+</li></ul>
+</div>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Podkategorija Nekat.html">Nekategorizovano</a><div class="u-nav-popup">
+<ul class="u-h-spacing-30 u-nav u-unstyled u-v-spacing-10 u-nav-10"><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Nekategorizovano.html?lokacija=&podkategorija=Vozač">Vozač</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Nekategorizovano.html?lokacija=&podkategorija=Transport selidbi">Transport selidbi</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Nekategorizovano.html?lokacija=&podkategorija=Fizički radnik">Fizički radnik</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Nekategorizovano.html?lokacija=&podkategorija=Grafičar">Grafičar</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Nekategorizovano.html?lokacija=&podkategorija=Firmopisac">Firmopisac</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Nekategorizovano.html?lokacija=&podkategorija=Serviser za bicikle">Serviser za bicikle</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Nekategorizovano.html?lokacija=&podkategorija=Ski serviser">Ski serviser</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Nekategorizovano.html?lokacija=&podkategorija=Serviser medicinske opreme">Serviser medicinske opreme</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Nekategorizovano.html?lokacija=&podkategorija=Roletne i venecijaneri">Roletne i venecijaneri</a>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Nekategorizovano.html?lokacija=&podkategorija=">Sve podkategorije</a>
+</li></ul>
+</div>
+</li><li class="u-nav-item"><a class="u-active-grey-15 u-button-style u-hover-grey-10 u-nav-link u-text-active-white u-text-custom-color-2  u-white" href="Kategorije.html">Sve kategorije</a>
+</li></ul>
+</div>
+</li><li class="u-nav-item"><a class="u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-nav-link u-text-white " style="padding: 10px;" href="Kontakt.html">Kontakt</a>
+</li><li class="u-nav-item"><a class="u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-nav-link u-text-white " style="padding: 10px;" href="O nama.html">O nama</a>
+</li><li class="u-nav-item"><a class="u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-nav-link u-text-white " style="padding: 10px;" href="Pomoć.html">Pomoć</a>
+</li></ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-11"><li class="u-nav-item"><a class="u-button-style u-nav-link active" href="Kategorije.html" style="padding: 10px;">Kategorije</a><div class="u-nav-popup"><ul class="u-h-spacing-30 u-nav u-unstyled u-v-spacing-10 u-nav-12"><li class="u-nav-item"><a class="u-button-style u-nav-link">Građevinski radovi</a><div class="u-nav-popup"><ul class="u-h-spacing-30 u-nav u-unstyled u-v-spacing-10 u-nav-13"><li class="u-nav-item"><a class="u-button-style u-nav-link">Moler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Gipsar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Fasader</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Zidar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Parketar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Keramičar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Građevinski limar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Varilac</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Građevinski stolar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Izolater</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Tesar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Izrada bazena i fontana</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Pomoćni radnik</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Postavljanje podnih površina</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Sječenje i bušenje</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Armirač</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Bravar-monter</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Sve podkategorije</a>
+</li></ul>
+</div>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Elektrika</a><div class="u-nav-popup"><ul class="u-h-spacing-30 u-nav u-unstyled u-v-spacing-10 u-nav-14"><li class="u-nav-item"><a class="u-button-style u-nav-link">Električar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Vikler elektromotora</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Serviser liftova</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Monter klima uređaja</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Audio-video serviser</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Serviser mobilnih telefona</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Serviser računara</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Sve podkategorije</a>
+</li></ul>
+</div>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Održavanje</a><div class="u-nav-popup"><ul class="u-h-spacing-30 u-nav u-unstyled u-v-spacing-10 u-nav-15"><li class="u-nav-item"><a class="u-button-style u-nav-link">Spremačica</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Čistač</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Perač podnih površina</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Odžačar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Baštovan</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Drvosječa</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Visinski radnik</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Perač fasada</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Haus majstor/Domar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Sve podkategorije</a>
+</li></ul>
+</div>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Cjevne instalacije</a><div class="u-nav-popup"><ul class="u-h-spacing-30 u-nav u-unstyled u-v-spacing-10 u-nav-16"><li class="u-nav-item"><a class="u-button-style u-nav-link">Vodoinstalater</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Monter grijnih instalacija</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Ventilacioni sistemi</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Sve podkategorije</a>
+</li></ul>
+</div>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Obrada materijala</a><div class="u-nav-popup"><ul class="u-h-spacing-30 u-nav u-unstyled u-v-spacing-10 u-nav-17"><li class="u-nav-item"><a class="u-button-style u-nav-link">Ključar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Tapetar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Metalostrugar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Stolar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Staklorezac</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Grnčar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Kamenorezac</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Mašin-bravar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Kovač</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Površinska obrada</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Livac</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Uramljivač</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Metaloglodač</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Metalooštrač</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Pečatorezac</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Sve podkategorije</a>
+</li></ul>
+</div>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Garderoba i nakit</a><div class="u-nav-popup"><ul class="u-h-spacing-30 u-nav u-unstyled u-v-spacing-10 u-nav-18"><li class="u-nav-item"><a class="u-button-style u-nav-link">Krojač</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Obućar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Tašner</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Sajdžija-Časovničar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Juvelir-Zlatar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Mašinski vez</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Ručni vez</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Krznar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Šeširdžija</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Serviser šivaćih mašina</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Sve podkategorije</a>
+</li></ul>
+</div>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Održavanje vozila</a><div class="u-nav-popup"><ul class="u-h-spacing-30 u-nav u-unstyled u-v-spacing-10 u-nav-19"><li class="u-nav-item"><a class="u-button-style u-nav-link">Auto električar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Auto limar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Auto bravar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Auto mehaničar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Serviser autogas sistema</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Auto grafičar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Auto tapetar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Auto perač</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Vulkanizer</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Šlep služba</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Serviser trapa</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Auto stakla</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Auto plastičar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Serviser auspuha</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Serviser motocikala</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Sve podkategorije</a>
+</li></ul>
+</div>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Nekategorizovano</a><div class="u-nav-popup"><ul class="u-h-spacing-30 u-nav u-unstyled u-v-spacing-10 u-nav-20"><li class="u-nav-item"><a class="u-button-style u-nav-link">Vozač</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Transport selidbi</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Fizički radnik</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Grafičar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Firmopisac</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Serviser za bicikle</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Ski serviser</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Serviser medicinske opreme</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Roletne i venecijaneri</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Sve podkategorije</a>
+</li></ul>
+</div>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">Sve kategorije</a>
+</li></ul>
+</div>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" style="padding: 10px;">Kontakt</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" style="padding: 10px;">O nama</a>
+</li></ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        <style class="offcanvas-style">            .u-offcanvas .u-sidenav { flex-basis: 250px !important; }            .u-offcanvas:not(.u-menu-open-right) .u-sidenav { margin-left: -250px; }            .u-offcanvas.u-menu-open-right .u-sidenav { margin-right: -250px; }            @keyframes menu-shift-left    { from { left: 0;        } to { left: 250px;  } }            @keyframes menu-unshift-left  { from { left: 250px;  } to { left: 0;        } }            @keyframes menu-shift-right   { from { right: 0;       } to { right: 250px; } }            @keyframes menu-unshift-right { from { right: 250px; } to { right: 0;       } }            </style></nav>
+        <a class="u-login u-text-white u-login-1" href="Prijava.html" title="Login">Prijava</a>
+      </div>
+      
+      
+      
+      
+      
+    
+        <style class="u-sticky-style" data-style-id="6f2b">.u-sticky-fixed.u-sticky-6f2b:before, .u-body.u-sticky-fixed .u-sticky-6f2b:before {
+border-color: #404040 !important; border-width: 2px !important; borders: top right bottom left !important
+}</style>
+      </div>
+    </div></header>
+    <section class="u-align-center-lg u-align-center-md u-align-center-xl u-align-left-sm u-align-left-xs u-clearfix u-image u-section-1" id="carousel_a4bf" data-image-width="1980" data-image-height="1320">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-large-text u-text u-text-variant">Ovdje možete urediti ili obrisati Vašu uslugu<br><b>Napomena:</b> Trenutno nije moguće mijenjati kategoriju, niti podkategoriju</p><hr>
+        <img class="u-expanded-width u-image u-image-contain u-image-default u-image-1" src="images/-min.jpg" alt="" data-image-width="1600" data-image-height="962">
+        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-container-style u-layout-cell u-size-20 u-layout-cell-1">
+                <div class="u-container-layout u-container-layout-1">
+                  <h4 class="u-custom-font u-text u-text-body-color u-text-2">Osnovni podaci</h4>
+                  <p class="u-text u-text-3">
+                    <div class="input_div">
+                      <div class="input_text"> <input class="written_name" type="text" id="name"  onchange="this.classList.remove('warning');" require required> <label>Ime</label> </div>
+                    </div><div class="input_div">  
+                      <div class="input_text"> <input type="text" id="lname" onchange="this.classList.remove('warning');" require required> <label>Prezime</label> </div>
+                  </div>
+                  <div class="input_div">
+                      <div class="input_text"> <input type="text" onchange="this.classList.remove('warning');" id="email" require required> <label>Email</label> </div>
+                  </div><div class="input_div">
+                      <div class="input_text"> <input type="text" onchange="this.classList.remove('warning');" id="telefon" require required> <label>Telefon</label> </div>
+                  </div>
+                  <div class="input_div">
+                      <div class="input_text"> <input class="pass_type" onchange="this.classList.remove('warning');" type="password" id="pass" require required> <label>Lozinka</label> <i class="fa fa-eye-slash password_eye"></i> </div>
+                      <div class="input_text"> <input class="confirm_pass_type" onchange="this.classList.remove('warning');" type="password" id="repass" require required> <label>Ponovi lozinku</label> <i class="fa fa-eye-slash con_eye"></i> </div>
+                  </div>
+                  
+                  <div class="input_div sta">
+                      <div class="input_text form-group"> <select id="lok" onchange="this.classList.remove('warning');" class="form-control" require required>
+                              <option value="">Lokacija</option>
+                              <option value="Banovići">Banovići
+                              </option><option value="Banja Luka">Banja Luka
+                              </option><option value="Berkovići">Berkovići
+                              </option><option value="Bihać">Bihać
+                              </option><option value="Bijeljina">Bijeljina
+                              </option><option value="Bileća">Bileća
+                              </option><option value="Blagaj">Blagaj
+                              </option><option value="Bosanska Kostajnica">Bosanska Kostajnica
+                              </option><option value="Bosanska Krupa">Bosanska Krupa
+                              </option><option value="Bosanska Otoka">Bosanska Otoka
+                              </option><option value="Bosanski Brod">Bosanski Brod
+                              </option><option value="Bosanski Petrovac">Bosanski Petrovac
+                              </option><option value="Bosansko Grahovo">Bosansko Grahovo
+                              </option><option value="Bratunac">Bratunac
+                              </option><option value="Brčko">Brčko
+                              </option><option value="Breza">Breza
+                              </option><option value="Bugojno">Bugojno
+                              </option><option value="Busovača">Busovača
+                              </option><option value="Bužim">Bužim
+                              
+                              </option><option value="Cazin">Cazin
+                              
+                              </option><option value="Čajniče">Čajniče
+                              </option><option value="Čapljina">Čapljina
+                              </option><option value="Čelić">Čelić
+                              </option><option value="Čelinac">Čelinac
+                              </option><option value="Čitluk">Čitluk
+                              
+                              </option><option value="Derventa">Derventa
+                              </option><option value="Doboj">Doboj
+                              </option><option value="Doboj Istok">Doboj Istok
+                              </option><option value="Doboj Jug">Doboj Jug
+                              </option><option value="Dobretići">Dobretići
+                              </option><option value="Domaljevac / Šamac (Bosanski Šamac)">Domaljevac / Šamac (Bosanski Šamac)
+                              </option><option value="Donji Vakuf">Donji Vakuf
+                              </option><option value="Drvar">Drvar
+                              
+                              </option><option value="Foča">Foča
+                              </option><option value="Foča-Ustikolina">Foča-Ustikolina
+                              </option><option value="Fojnica">Fojnica
+                              
+                              </option><option value="Gacko">Gacko
+                              </option><option value="Glamoč">Glamoč
+                              </option><option value="Glavatičevo">Glavatičevo
+                              </option><option value="Goražde">Goražde
+                              </option><option value="Gornji Vakuf / Uskoplje">Gornji Vakuf / Uskoplje
+                              </option><option value="Gračanica">Gračanica
+                              </option><option value="Gradačac">Gradačac
+                              </option><option value="Gradiška (Bosanska Gradiška)">Gradiška (Bosanska Gradiška)
+                              </option><option value="Grude">Grude
+                              
+                              </option><option value="Hadžići">Hadžići
+                              </option><option value="Han Pijesak">Han Pijesak
+                              
+                              </option><option value="Ilidža">Ilidža
+                              </option><option value="Ilijaš">Ilijaš
+                              </option><option value="Istočno Sarajevo">Istočno Sarajevo
+                              
+                              </option><option value="Jablanica">Jablanica
+                              </option><option value="Jajce">Jajce
+                              </option><option value="Jelah">Jelah
+                              
+                              </option><option value="Kakanj">Kakanj
+                              </option><option value="Kalesija">Kalesija
+                              </option><option value="Kalinovik">Kalinovik
+                              </option><option value="Kiseljak">Kiseljak
+                              </option><option value="Kladanj">Kladanj
+                              </option><option value="Ključ">Ključ
+                              </option><option value="Kneževo (Skender Vakuf)">Kneževo (Skender Vakuf)
+                              </option><option value="Konjic">Konjic
+                              </option><option value="Kotor Varoš">Kotor Varoš
+                              </option><option value="Kozarska Dubica (Bosanska Dubica)">Kozarska Dubica (Bosanska Dubica)
+                              </option><option value="Kraljeva Sutjeska">Kraljeva Sutjeska
+                              </option><option value="Kreševo">Kreševo
+                              </option><option value="Krupa na Uni">Krupa na Uni
+                              </option><option value="Kulen Vakuf">Kulen Vakuf
+                              </option><option value="Kupres">Kupres
+                              
+                              </option><option value="Laktaši">Laktaši
+                              </option><option value="Livno">Livno
+                              </option><option value="Lopare">Lopare
+                              </option><option value="Lukavac">Lukavac
+                              
+                              </option><option value="Ljubinje">Ljubinje
+                              </option><option value="Ljubuški">Ljubuški
+                              
+                              </option><option value="Maglaj">Maglaj
+                              </option><option value="Međugorje">Međugorje
+                              </option><option value="Milići">Milići
+                              </option><option value="Modriča">Modriča
+                              </option><option value="Mostar">Mostar
+                              </option><option value="Mrkonjić Grad">Mrkonjić Grad
+                              
+                              </option><option value="Neum">Neum
+                              </option><option value="Nevesinje">Nevesinje
+                              </option><option value="Novi grad (Bosanski Novi)">Novi grad (Bosanski Novi)
+                              </option><option value="Novi Travnik">Novi Travnik
+                              
+                              </option><option value="Odžak">Odžak
+                              </option><option value="Olovo">Olovo
+                              </option><option value="Orašje">Orašje
+                              </option><option value="Osmaci">Osmaci
+                              
+                              </option><option value="Pale">Pale
+                              </option><option value="Petrovo (Bosansko Petrovo Selo)">Petrovo (Bosansko Petrovo Selo)
+                              </option><option value="Počitelj">Počitelj
+                              </option><option value="Posušje">Posušje
+                              </option><option value="Pale-Prača">Pale-Prača
+                              </option><option value="Prijedor">Prijedor
+                              </option><option value="Prnjavor">Prnjavor
+                              </option><option value="Prozor – Rama">Prozor – Rama
+                              </option><option value="Prusac">Prusac
+                              
+                              </option><option value="Ravno">Ravno
+                              </option><option value="Rogatica">Rogatica
+                              </option><option value="Rudo">Rudo
+                              
+                              </option><option value="Sanski Most">Sanski Most
+                              </option><option value="Sapna">Sapna
+                              </option><option value="Sarajevo">Sarajevo
+                              </option><option value="Sokolac">Sokolac
+                              </option><option value="Srbac">Srbac
+                              </option><option value="Srebrenica">Srebrenica
+                              </option><option value="Srebrenik">Srebrenik
+                              </option><option value="Stolac">Stolac
+                              
+                              </option><option value="Šamac / Domaljevac (Bosanski Šamac)">Šamac / Domaljevac (Bosanski Šamac)
+                              </option><option value="Šekovići">Šekovići
+                              </option><option value="Šipovo">Šipovo
+                              </option><option value="Široki Brijeg">Široki Brijeg
+                              
+                              </option><option value="Teočak">Teočak
+                              </option><option value="Teslić">Teslić
+                              </option><option value="Tešanj">Tešanj
+                              </option><option value="Tomislavgrad (Duvno)">Tomislavgrad (Duvno)
+                              </option><option value="Travnik">Travnik
+                              </option><option value="Trebinje">Trebinje
+                              </option><option value="Trnovo">Trnovo
+                              </option><option value="Turbe">Turbe
+                              </option><option value="Tuzla">Tuzla
+                              
+                              </option><option value="Ugljevik">Ugljevik
+                              </option><option value="Usora">Usora
+                              </option><option value="Ustiprača">Ustiprača
+                              
+                              </option><option value="Vareš">Vareš
+                              </option><option value="Velika Kladuša">Velika Kladuša
+                              </option><option value="Visoko">Visoko
+                              </option><option value="Višegrad">Višegrad
+                              </option><option value="Vitez">Vitez
+                              </option><option value="Vlasenica">Vlasenica
+                              </option><option value="Vogošća">Vogošća
+                              </option><option value="Vukosavlje">Vukosavlje
+                              
+                              </option><option value="Zavidovići">Zavidovići
+                              </option><option value="Zenica">Zenica
+                              </option><option value="Zvornik">Zvornik
+                              
+                              </option><option value="Žepa">Žepa
+                              </option><option value="Žepče">Žepče
+                              </option><option value="Živinice">Živinice
+                              </option>
+                          </select> </div>
+                  </div><div class="input_div">
+                      <div class="input_text"> <input type="text" id="adresa" onchange="this.classList.remove('warning');" require required> <label>Adresa (ulica i broj)</label> </div>
+                  </div>
+                  </p>
+                </div>
+              </div>
+              <div class="u-container-style u-layout-cell u-size-20 u-layout-cell-2">
+                <div class="u-container-layout u-container-layout-2">
+                  <h4 class="u-custom-font u-text u-text-body-color u-text-4">Stručni podaci</h4>
+                  <p class="u-text u-text-5">
+                    <div class="input_div sta">
+                      <div class="input_text form-group">
+                      <select class="form-control" name="kategorija" id="category" style="width: 300px;" disabled>
+                            <option value="">Izaberi kategoriju</option>
+                            <option onclick="addOption(1)">Građevinski radovi</option>
+                            <option onclick="addOption(2)">Elektrika</option>
+                            <option onclick="addOption(3)">Održavanje</option>
+                            <option onclick="addOption(4)">Cjevne instalacije</option>
+                            <option onclick="addOption(5)">Obrada materijala</option>
+                            <option onclick="addOption(6)">Garderoba i nakit</option>
+                            <option onclick="addOption(7)">Održavanje vozila</option>
+                            <option onclick="addOption(8)">Nekategorizovano</option>
+                        </select></div>
+                      </div>
+                      <div class="input_div sta">
+                        <div class="input_text form-group">   
+                      <select class="form-control" name="podkategorija" id="podkategorija"  style="width:300px;"  disabled>
+                      </select></div>
+                </div><br>
+                <div id="lista">
+                    <div > <input type="checkbox" id="usluga-1" name="vehicle1" value="Bike">
+                    <label id="usluga1"> Usluga 1</label></div><br>
+                    <div > <input type="checkbox" id="usluga-2" name="vehicle1" value="Bike">
+                    <label id="usluga2"> Usluga 2</label></div><br>
+                    <div > <input type="checkbox" id="usluga-3" name="vehicle1" value="Bike">
+                    <label id="usluga3"> Usluga 3</label></div><br>
+                    <div > <input type="checkbox" id="usluga-4" name="vehicle1" value="Bike">
+                    <label id="usluga4"> Usluga 4</label></div>
+                </div>
+                <div class="input_div">
+                    <div class="input_text"> <textarea id="opis" placeholder="Ukratko opišite sebe i uslugu koju nudite" style="width: 80%;height: auto;"></textarea> </div>
+                </div>
+                  </p>
+                </div>
+              </div>
+              <div class="u-container-style u-layout-cell u-size-20 u-layout-cell-3">
+                <div class="u-container-layout u-container-layout-3">
+                  <h4 class="u-custom-font u-text u-text-body-color u-text-6">Radno vrijeme</h4>
+                  <div class="u-expanded-width u-table u-table-responsive u-table-1" style="margin-top: 40px;">
+                    <div class="input_div" style="margin-top: 10px;">
+                      <div class="input_text"><label style="color: black;">Ponedjeljak</label></div>
+                              <div class="input_text"> <select id="pon-od"  onchange="this.classList.remove('warning');document.getElementById('pon-do').classList.remove('warning');" require>
+                                    <option value="--">--</option><option value="00:00">00:00</option><option value="00:30">00:30</option><option value="01:00">01:00</option><option value="01:30">01:30</option><option value="02:00">02:00</option><option value="02:30">02:30</option><option value="03:00">03:00</option><option value="03:30">03:30</option><option value="04:00">04:00</option><option value="04:30">04:30</option><option value="05:00">05:00</option><option value="05:30">05:30</option><option value="06:00">06:00</option><option value="06:30">06:30</option><option value="07:00">07:00</option><option value="07:30">07:30</option><option value="08:00">08:00</option><option value="08:30">08:30</option><option value="09:00" selected="selected">09:00</option><option value="09:30">09:30</option><option value="10:00">10:00</option><option value="10:30">10:30</option><option value="11:00">11:00</option><option value="11:30">11:30</option><option value="12:00">12:00</option><option value="12:30">12:30</option><option value="13:00">13:00</option><option value="13:30">13:30</option><option value="14:00">14:00</option><option value="14:30">14:30</option><option value="15:00">15:00</option><option value="15:30">15:30</option><option value="16:00">16:00</option><option value="16:30">16:30</option><option value="17:00">17:00</option><option value="17:30">17:30</option><option value="18:00">18:00</option><option value="18:30">18:30</option><option value="19:00">19:00</option><option value="19:30">19:30</option><option value="20:00">20:00</option><option value="20:30">20:30</option><option value="21:00">21:00</option><option value="21:30">21:30</option><option value="22:00">22:00</option><option value="22:30">22:30</option><option value="23:00">23:00</option><option value="23:30">23:30</option>     
+                                  </select>  </div>
+                                  <label style="color: black;margin-top: 10px;font-size: 20px;">:</label>
+                              <div class="input_text"> <select id="pon-do" onchange="this.classList.remove('warning');document.getElementById('pon-od').classList.remove('warning');" require>         
+                                    <option value="--">--</option><option value="00:00">00:00</option><option value="00:30">00:30</option><option value="01:00">01:00</option><option value="01:30">01:30</option><option value="02:00">02:00</option><option value="02:30">02:30</option><option value="03:00">03:00</option><option value="03:30">03:30</option><option value="04:00">04:00</option><option value="04:30">04:30</option><option value="05:00">05:00</option><option value="05:30">05:30</option><option value="06:00">06:00</option><option value="06:30">06:30</option><option value="07:00">07:00</option><option value="07:30">07:30</option><option value="08:00">08:00</option><option value="08:30">08:30</option><option value="09:00">09:00</option><option value="09:30">09:30</option><option value="10:00">10:00</option><option value="10:30">10:30</option><option value="11:00">11:00</option><option value="11:30">11:30</option><option value="12:00">12:00</option><option value="12:30">12:30</option><option value="13:00">13:00</option><option value="13:30">13:30</option><option value="14:00">14:00</option><option value="14:30">14:30</option><option value="15:00">15:00</option><option value="15:30">15:30</option><option value="16:00">16:00</option><option value="16:30">16:30</option><option value="17:00" selected="selected">17:00</option><option value="17:30">17:30</option><option value="18:00">18:00</option><option value="18:30">18:30</option><option value="19:00">19:00</option><option value="19:30">19:30</option><option value="20:00">20:00</option><option value="20:30">20:30</option><option value="21:00">21:00</option><option value="21:30">21:30</option><option value="22:00">22:00</option><option value="22:30">22:30</option><option value="23:00">23:00</option><option value="23:30">23:30</option>     
+                                  </select>  </div>
+                          </div>
+                          <div class="input_div" style="margin-top: 10px;">
+                              <div class="input_text"><label style="color: black;">Utorak</label></div>
+                              <div class="input_text"> <select  id="uto-od" onchange="this.classList.remove('warning');document.getElementById('uto-do').classList.remove('warning');" require>
+                                <option value="--">--</option><option value="00:00">00:00</option><option value="00:30">00:30</option><option value="01:00">01:00</option><option value="01:30">01:30</option><option value="02:00">02:00</option><option value="02:30">02:30</option><option value="03:00">03:00</option><option value="03:30">03:30</option><option value="04:00">04:00</option><option value="04:30">04:30</option><option value="05:00">05:00</option><option value="05:30">05:30</option><option value="06:00">06:00</option><option value="06:30">06:30</option><option value="07:00">07:00</option><option value="07:30">07:30</option><option value="08:00">08:00</option><option value="08:30">08:30</option><option value="09:00" selected="selected">09:00</option><option value="09:30">09:30</option><option value="10:00">10:00</option><option value="10:30">10:30</option><option value="11:00">11:00</option><option value="11:30">11:30</option><option value="12:00">12:00</option><option value="12:30">12:30</option><option value="13:00">13:00</option><option value="13:30">13:30</option><option value="14:00">14:00</option><option value="14:30">14:30</option><option value="15:00">15:00</option><option value="15:30">15:30</option><option value="16:00">16:00</option><option value="16:30">16:30</option><option value="17:00">17:00</option><option value="17:30">17:30</option><option value="18:00">18:00</option><option value="18:30">18:30</option><option value="19:00">19:00</option><option value="19:30">19:30</option><option value="20:00">20:00</option><option value="20:30">20:30</option><option value="21:00">21:00</option><option value="21:30">21:30</option><option value="22:00">22:00</option><option value="22:30">22:30</option><option value="23:00">23:00</option><option value="23:30">23:30</option>     
+                              </select>  </div>
+                                  <label style="color: black;margin-top: 10px;font-size: 20px;">:</label>
+                              <div class="input_text"> <select  id="uto-do" onchange="this.classList.remove('warning');document.getElementById('uto-od').classList.remove('warning');" require>
+                                <option value="--">--</option><option value="00:00">00:00</option><option value="00:30">00:30</option><option value="01:00">01:00</option><option value="01:30">01:30</option><option value="02:00">02:00</option><option value="02:30">02:30</option><option value="03:00">03:00</option><option value="03:30">03:30</option><option value="04:00">04:00</option><option value="04:30">04:30</option><option value="05:00">05:00</option><option value="05:30">05:30</option><option value="06:00">06:00</option><option value="06:30">06:30</option><option value="07:00">07:00</option><option value="07:30">07:30</option><option value="08:00">08:00</option><option value="08:30">08:30</option><option value="09:00">09:00</option><option value="09:30">09:30</option><option value="10:00">10:00</option><option value="10:30">10:30</option><option value="11:00">11:00</option><option value="11:30">11:30</option><option value="12:00">12:00</option><option value="12:30">12:30</option><option value="13:00">13:00</option><option value="13:30">13:30</option><option value="14:00">14:00</option><option value="14:30">14:30</option><option value="15:00">15:00</option><option value="15:30">15:30</option><option value="16:00">16:00</option><option value="16:30">16:30</option><option value="17:00" selected="selected">17:00</option><option value="17:30">17:30</option><option value="18:00">18:00</option><option value="18:30">18:30</option><option value="19:00">19:00</option><option value="19:30">19:30</option><option value="20:00">20:00</option><option value="20:30">20:30</option><option value="21:00">21:00</option><option value="21:30">21:30</option><option value="22:00">22:00</option><option value="22:30">22:30</option><option value="23:00">23:00</option><option value="23:30">23:30</option>     
+                              </select>  </div>
+                          </div>
+                          <div class="input_div" style="margin-top: 10px;">
+                              <div class="input_text"><label style="color: black;">Srijeda</label></div>
+                              <div class="input_text"> <select  id="sri-od" onchange="this.classList.remove('warning');document.getElementById('sri-do').classList.remove('warning');" require>
+                                <option value="--">--</option><option value="00:00">00:00</option><option value="00:30">00:30</option><option value="01:00">01:00</option><option value="01:30">01:30</option><option value="02:00">02:00</option><option value="02:30">02:30</option><option value="03:00">03:00</option><option value="03:30">03:30</option><option value="04:00">04:00</option><option value="04:30">04:30</option><option value="05:00">05:00</option><option value="05:30">05:30</option><option value="06:00">06:00</option><option value="06:30">06:30</option><option value="07:00">07:00</option><option value="07:30">07:30</option><option value="08:00">08:00</option><option value="08:30">08:30</option><option value="09:00" selected="selected">09:00</option><option value="09:30">09:30</option><option value="10:00">10:00</option><option value="10:30">10:30</option><option value="11:00">11:00</option><option value="11:30">11:30</option><option value="12:00">12:00</option><option value="12:30">12:30</option><option value="13:00">13:00</option><option value="13:30">13:30</option><option value="14:00">14:00</option><option value="14:30">14:30</option><option value="15:00">15:00</option><option value="15:30">15:30</option><option value="16:00">16:00</option><option value="16:30">16:30</option><option value="17:00">17:00</option><option value="17:30">17:30</option><option value="18:00">18:00</option><option value="18:30">18:30</option><option value="19:00">19:00</option><option value="19:30">19:30</option><option value="20:00">20:00</option><option value="20:30">20:30</option><option value="21:00">21:00</option><option value="21:30">21:30</option><option value="22:00">22:00</option><option value="22:30">22:30</option><option value="23:00">23:00</option><option value="23:30">23:30</option>     
+                              </select>  </div>
+                                  <label style="color: black;margin-top: 10px;font-size: 20px;">:</label>
+                              <div class="input_text"> <select  id="sri-do" onchange="this.classList.remove('warning');document.getElementById('sri-od').classList.remove('warning');" require>
+                                <option value="--">--</option><option value="00:00">00:00</option><option value="00:30">00:30</option><option value="01:00">01:00</option><option value="01:30">01:30</option><option value="02:00">02:00</option><option value="02:30">02:30</option><option value="03:00">03:00</option><option value="03:30">03:30</option><option value="04:00">04:00</option><option value="04:30">04:30</option><option value="05:00">05:00</option><option value="05:30">05:30</option><option value="06:00">06:00</option><option value="06:30">06:30</option><option value="07:00">07:00</option><option value="07:30">07:30</option><option value="08:00">08:00</option><option value="08:30">08:30</option><option value="09:00">09:00</option><option value="09:30">09:30</option><option value="10:00">10:00</option><option value="10:30">10:30</option><option value="11:00">11:00</option><option value="11:30">11:30</option><option value="12:00">12:00</option><option value="12:30">12:30</option><option value="13:00">13:00</option><option value="13:30">13:30</option><option value="14:00">14:00</option><option value="14:30">14:30</option><option value="15:00">15:00</option><option value="15:30">15:30</option><option value="16:00">16:00</option><option value="16:30">16:30</option><option value="17:00" selected="selected">17:00</option><option value="17:30">17:30</option><option value="18:00">18:00</option><option value="18:30">18:30</option><option value="19:00">19:00</option><option value="19:30">19:30</option><option value="20:00">20:00</option><option value="20:30">20:30</option><option value="21:00">21:00</option><option value="21:30">21:30</option><option value="22:00">22:00</option><option value="22:30">22:30</option><option value="23:00">23:00</option><option value="23:30">23:30</option>     
+                              </select>  </div>
+                          </div>
+                          <div class="input_div" style="margin-top: 10px;">
+                              <div class="input_text"><label style="color: black;">Četvrtak</label></div>
+                              <div class="input_text"> <select  id="cet-od" onchange="this.classList.remove('warning');document.getElementById('cet-do').classList.remove('warning');" require>
+                                <option value="--">--</option><option value="00:00">00:00</option><option value="00:30">00:30</option><option value="01:00">01:00</option><option value="01:30">01:30</option><option value="02:00">02:00</option><option value="02:30">02:30</option><option value="03:00">03:00</option><option value="03:30">03:30</option><option value="04:00">04:00</option><option value="04:30">04:30</option><option value="05:00">05:00</option><option value="05:30">05:30</option><option value="06:00">06:00</option><option value="06:30">06:30</option><option value="07:00">07:00</option><option value="07:30">07:30</option><option value="08:00">08:00</option><option value="08:30">08:30</option><option value="09:00" selected="selected">09:00</option><option value="09:30">09:30</option><option value="10:00">10:00</option><option value="10:30">10:30</option><option value="11:00">11:00</option><option value="11:30">11:30</option><option value="12:00">12:00</option><option value="12:30">12:30</option><option value="13:00">13:00</option><option value="13:30">13:30</option><option value="14:00">14:00</option><option value="14:30">14:30</option><option value="15:00">15:00</option><option value="15:30">15:30</option><option value="16:00">16:00</option><option value="16:30">16:30</option><option value="17:00">17:00</option><option value="17:30">17:30</option><option value="18:00">18:00</option><option value="18:30">18:30</option><option value="19:00">19:00</option><option value="19:30">19:30</option><option value="20:00">20:00</option><option value="20:30">20:30</option><option value="21:00">21:00</option><option value="21:30">21:30</option><option value="22:00">22:00</option><option value="22:30">22:30</option><option value="23:00">23:00</option><option value="23:30">23:30</option>     
+                              </select>  </div>
+                                  <label style="color: black;margin-top: 10px;font-size: 20px;">:</label>
+                              <div class="input_text"> <select  id="cet-do" onchange="this.classList.remove('warning');document.getElementById('cet-od').classList.remove('warning');" require>
+                                <option value="--">--</option><option value="00:00">00:00</option><option value="00:30">00:30</option><option value="01:00">01:00</option><option value="01:30">01:30</option><option value="02:00">02:00</option><option value="02:30">02:30</option><option value="03:00">03:00</option><option value="03:30">03:30</option><option value="04:00">04:00</option><option value="04:30">04:30</option><option value="05:00">05:00</option><option value="05:30">05:30</option><option value="06:00">06:00</option><option value="06:30">06:30</option><option value="07:00">07:00</option><option value="07:30">07:30</option><option value="08:00">08:00</option><option value="08:30">08:30</option><option value="09:00">09:00</option><option value="09:30">09:30</option><option value="10:00">10:00</option><option value="10:30">10:30</option><option value="11:00">11:00</option><option value="11:30">11:30</option><option value="12:00">12:00</option><option value="12:30">12:30</option><option value="13:00">13:00</option><option value="13:30">13:30</option><option value="14:00">14:00</option><option value="14:30">14:30</option><option value="15:00">15:00</option><option value="15:30">15:30</option><option value="16:00">16:00</option><option value="16:30">16:30</option><option value="17:00" selected="selected">17:00</option><option value="17:30">17:30</option><option value="18:00">18:00</option><option value="18:30">18:30</option><option value="19:00">19:00</option><option value="19:30">19:30</option><option value="20:00">20:00</option><option value="20:30">20:30</option><option value="21:00">21:00</option><option value="21:30">21:30</option><option value="22:00">22:00</option><option value="22:30">22:30</option><option value="23:00">23:00</option><option value="23:30">23:30</option>     
+                              </select>  </div>
+                          </div>
+                          <div class="input_div" style="margin-top: 10px;">
+                              <div class="input_text"><label style="color: black;">Petak</label></div>
+                              <div class="input_text"> <select  id="pet-od" onchange="this.classList.remove('warning');document.getElementById('pet-do').classList.remove('warning');" require>
+                                <option value="--">--</option><option value="00:00">00:00</option><option value="00:30">00:30</option><option value="01:00">01:00</option><option value="01:30">01:30</option><option value="02:00">02:00</option><option value="02:30">02:30</option><option value="03:00">03:00</option><option value="03:30">03:30</option><option value="04:00">04:00</option><option value="04:30">04:30</option><option value="05:00">05:00</option><option value="05:30">05:30</option><option value="06:00">06:00</option><option value="06:30">06:30</option><option value="07:00">07:00</option><option value="07:30">07:30</option><option value="08:00">08:00</option><option value="08:30">08:30</option><option value="09:00" selected="selected">09:00</option><option value="09:30">09:30</option><option value="10:00">10:00</option><option value="10:30">10:30</option><option value="11:00">11:00</option><option value="11:30">11:30</option><option value="12:00">12:00</option><option value="12:30">12:30</option><option value="13:00">13:00</option><option value="13:30">13:30</option><option value="14:00">14:00</option><option value="14:30">14:30</option><option value="15:00">15:00</option><option value="15:30">15:30</option><option value="16:00">16:00</option><option value="16:30">16:30</option><option value="17:00">17:00</option><option value="17:30">17:30</option><option value="18:00">18:00</option><option value="18:30">18:30</option><option value="19:00">19:00</option><option value="19:30">19:30</option><option value="20:00">20:00</option><option value="20:30">20:30</option><option value="21:00">21:00</option><option value="21:30">21:30</option><option value="22:00">22:00</option><option value="22:30">22:30</option><option value="23:00">23:00</option><option value="23:30">23:30</option>     
+                              </select>  </div>
+                                  <label style="color: black;margin-top: 10px;font-size: 20px;">:</label>
+                              <div class="input_text"> <select  id="pet-do" onchange="this.classList.remove('warning');document.getElementById('pet-od').classList.remove('warning');" require>
+                                <option value="--">--</option><option value="00:00">00:00</option><option value="00:30">00:30</option><option value="01:00">01:00</option><option value="01:30">01:30</option><option value="02:00">02:00</option><option value="02:30">02:30</option><option value="03:00">03:00</option><option value="03:30">03:30</option><option value="04:00">04:00</option><option value="04:30">04:30</option><option value="05:00">05:00</option><option value="05:30">05:30</option><option value="06:00">06:00</option><option value="06:30">06:30</option><option value="07:00">07:00</option><option value="07:30">07:30</option><option value="08:00">08:00</option><option value="08:30">08:30</option><option value="09:00">09:00</option><option value="09:30">09:30</option><option value="10:00">10:00</option><option value="10:30">10:30</option><option value="11:00">11:00</option><option value="11:30">11:30</option><option value="12:00">12:00</option><option value="12:30">12:30</option><option value="13:00">13:00</option><option value="13:30">13:30</option><option value="14:00">14:00</option><option value="14:30">14:30</option><option value="15:00">15:00</option><option value="15:30">15:30</option><option value="16:00">16:00</option><option value="16:30">16:30</option><option value="17:00" selected="selected">17:00</option><option value="17:30">17:30</option><option value="18:00">18:00</option><option value="18:30">18:30</option><option value="19:00">19:00</option><option value="19:30">19:30</option><option value="20:00">20:00</option><option value="20:30">20:30</option><option value="21:00">21:00</option><option value="21:30">21:30</option><option value="22:00">22:00</option><option value="22:30">22:30</option><option value="23:00">23:00</option><option value="23:30">23:30</option>     
+                              </select>  </div>
+                          </div>
+                          <div class="input_div" style="margin-top: 10px;">
+                              <div class="input_text"><label style="color: black;">Subota</label></div>
+                              <div class="input_text"> <select  id="sub-od" onchange="this.classList.remove('warning');document.getElementById('sub-do').classList.remove('warning');" require>
+                                <option value="--"  selected="selected">--</option><option value="00:00">00:00</option><option value="00:30">00:30</option><option value="01:00">01:00</option><option value="01:30">01:30</option><option value="02:00">02:00</option><option value="02:30">02:30</option><option value="03:00">03:00</option><option value="03:30">03:30</option><option value="04:00">04:00</option><option value="04:30">04:30</option><option value="05:00">05:00</option><option value="05:30">05:30</option><option value="06:00">06:00</option><option value="06:30">06:30</option><option value="07:00">07:00</option><option value="07:30">07:30</option><option value="08:00">08:00</option><option value="08:30">08:30</option><option value="09:00">09:00</option><option value="09:30">09:30</option><option value="10:00">10:00</option><option value="10:30">10:30</option><option value="11:00">11:00</option><option value="11:30">11:30</option><option value="12:00">12:00</option><option value="12:30">12:30</option><option value="13:00">13:00</option><option value="13:30">13:30</option><option value="14:00">14:00</option><option value="14:30">14:30</option><option value="15:00">15:00</option><option value="15:30">15:30</option><option value="16:00">16:00</option><option value="16:30">16:30</option><option value="17:00">17:00</option><option value="17:30">17:30</option><option value="18:00">18:00</option><option value="18:30">18:30</option><option value="19:00">19:00</option><option value="19:30">19:30</option><option value="20:00">20:00</option><option value="20:30">20:30</option><option value="21:00">21:00</option><option value="21:30">21:30</option><option value="22:00">22:00</option><option value="22:30">22:30</option><option value="23:00">23:00</option><option value="23:30">23:30</option>     
+                              </select>  </div>
+                                  <label style="color: black;margin-top: 10px;font-size: 20px;">:</label>
+                              <div class="input_text"> <select  id="sub-do" onchange="this.classList.remove('warning');document.getElementById('sub-od').classList.remove('warning');" require>
+                                <option value="--"  selected="selected">--</option><option value="00:00">00:00</option><option value="00:30">00:30</option><option value="01:00">01:00</option><option value="01:30">01:30</option><option value="02:00">02:00</option><option value="02:30">02:30</option><option value="03:00">03:00</option><option value="03:30">03:30</option><option value="04:00">04:00</option><option value="04:30">04:30</option><option value="05:00">05:00</option><option value="05:30">05:30</option><option value="06:00">06:00</option><option value="06:30">06:30</option><option value="07:00">07:00</option><option value="07:30">07:30</option><option value="08:00">08:00</option><option value="08:30">08:30</option><option value="09:00">09:00</option><option value="09:30">09:30</option><option value="10:00">10:00</option><option value="10:30">10:30</option><option value="11:00">11:00</option><option value="11:30">11:30</option><option value="12:00">12:00</option><option value="12:30">12:30</option><option value="13:00">13:00</option><option value="13:30">13:30</option><option value="14:00">14:00</option><option value="14:30">14:30</option><option value="15:00">15:00</option><option value="15:30">15:30</option><option value="16:00">16:00</option><option value="16:30">16:30</option><option value="17:00">17:00</option><option value="17:30">17:30</option><option value="18:00">18:00</option><option value="18:30">18:30</option><option value="19:00">19:00</option><option value="19:30">19:30</option><option value="20:00">20:00</option><option value="20:30">20:30</option><option value="21:00">21:00</option><option value="21:30">21:30</option><option value="22:00">22:00</option><option value="22:30">22:30</option><option value="23:00">23:00</option><option value="23:30">23:30</option>     
+                              </select>  </div>
+                          </div>
+                          <div class="input_div" style="margin-top: 10px;">
+                              <div class="input_text"><label style="color: black;">Nedjelja</label></div>
+                              <div class="input_text"> <select  id="ned-od" onchange="this.classList.remove('warning');document.getElementById('ned-do').classList.remove('warning');" require>
+                                <option value="--"  selected="selected">--</option><option value="00:00">00:00</option><option value="00:30">00:30</option><option value="01:00">01:00</option><option value="01:30">01:30</option><option value="02:00">02:00</option><option value="02:30">02:30</option><option value="03:00">03:00</option><option value="03:30">03:30</option><option value="04:00">04:00</option><option value="04:30">04:30</option><option value="05:00">05:00</option><option value="05:30">05:30</option><option value="06:00">06:00</option><option value="06:30">06:30</option><option value="07:00">07:00</option><option value="07:30">07:30</option><option value="08:00">08:00</option><option value="08:30">08:30</option><option value="09:00">09:00</option><option value="09:30">09:30</option><option value="10:00">10:00</option><option value="10:30">10:30</option><option value="11:00">11:00</option><option value="11:30">11:30</option><option value="12:00">12:00</option><option value="12:30">12:30</option><option value="13:00">13:00</option><option value="13:30">13:30</option><option value="14:00">14:00</option><option value="14:30">14:30</option><option value="15:00">15:00</option><option value="15:30">15:30</option><option value="16:00">16:00</option><option value="16:30">16:30</option><option value="17:00">17:00</option><option value="17:30">17:30</option><option value="18:00">18:00</option><option value="18:30">18:30</option><option value="19:00">19:00</option><option value="19:30">19:30</option><option value="20:00">20:00</option><option value="20:30">20:30</option><option value="21:00">21:00</option><option value="21:30">21:30</option><option value="22:00">22:00</option><option value="22:30">22:30</option><option value="23:00">23:00</option><option value="23:30">23:30</option>     
+                              </select>  </div>
+                                  <label style="color: black;margin-top: 10px;font-size: 20px;">:</label>
+                              <div class="input_text"> <select  id="ned-do" onchange="this.classList.remove('warning');document.getElementById('ned-od').classList.remove('warning');" require>
+                                <option value="--"  selected="selected">--</option><option value="00:00">00:00</option><option value="00:30">00:30</option><option value="01:00">01:00</option><option value="01:30">01:30</option><option value="02:00">02:00</option><option value="02:30">02:30</option><option value="03:00">03:00</option><option value="03:30">03:30</option><option value="04:00">04:00</option><option value="04:30">04:30</option><option value="05:00">05:00</option><option value="05:30">05:30</option><option value="06:00">06:00</option><option value="06:30">06:30</option><option value="07:00">07:00</option><option value="07:30">07:30</option><option value="08:00">08:00</option><option value="08:30">08:30</option><option value="09:00">09:00</option><option value="09:30">09:30</option><option value="10:00">10:00</option><option value="10:30">10:30</option><option value="11:00">11:00</option><option value="11:30">11:30</option><option value="12:00">12:00</option><option value="12:30">12:30</option><option value="13:00">13:00</option><option value="13:30">13:30</option><option value="14:00">14:00</option><option value="14:30">14:30</option><option value="15:00">15:00</option><option value="15:30">15:30</option><option value="16:00">16:00</option><option value="16:30">16:30</option><option value="17:00">17:00</option><option value="17:30">17:30</option><option value="18:00">18:00</option><option value="18:30">18:30</option><option value="19:00">19:00</option><option value="19:30">19:30</option><option value="20:00">20:00</option><option value="20:30">20:30</option><option value="21:00">21:00</option><option value="21:30">21:30</option><option value="22:00">22:00</option><option value="22:30">22:30</option><option value="23:00">23:00</option><option value="23:30">23:30</option>     
+                              </select>  </div>
+                  </div>
+                  </div>
+                  <hr>
+                  <a class="u-border-none u-btn u-btn-round u-button-style u-custom-color-8 u-hover-palette-2-base u-radius-50 u-btn-1" onclick="prijebrisanja()">Obriši profil</a>
+                  <a class="u-border-none u-btn u-btn-round u-button-style u-custom-color-7 u-hover-custom-color-9 u-radius-50 u-btn-2" onclick="prijeSlanja()">Spremi izmjene</a>
+                  <p class="u-align-center u-text u-text-7">Ukoliko niste napravili nikakve izmjene ili iste ne želite spremiti možete se jednostavno&nbsp;</p>
+                  <a href="Home.html" class="u-align-center u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius-50 u-btn-3">odjavi se</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-a059"><div class="u-clearfix u-sheet u-sheet-1">
+      <p class="u-small-text u-text u-text-variant u-text-1">Ova web aplikacija je školski projekat, rađen od strane jednog studenta sa ETF Sarajevo<br>
+        <br>Sve greške, primjedbe i/ili sugestije možete slati na:
+      </p>
+      <a href="mailto:ezahirovic3@etf.unsa.ba" class="u-active-none u-btn u-btn-rectangle u-button-style u-hover-none u-none u-radius-0 u-text-body-alt-color u-btn-1" style="margin: 0px auto 0 430px;"><span class="u-icon u-icon-1"><svg class="u-svg-content" viewBox="0 0 24 16" x="0px" y="0px" style="width: 1em; height: 1em;"><path fill="currentColor" d="M23.8,1.1l-7.3,6.8l7.3,6.8c0.1-0.2,0.2-0.6,0.2-0.9V2C24,1.7,23.9,1.4,23.8,1.1z M21.8,0H2.2
+c-0.4,0-0.7,0.1-1,0.2L10.6,9c0.8,0.8,2.2,0.8,3,0l9.2-8.7C22.6,0.1,22.2,0,21.8,0z M0.2,1.1C0.1,1.4,0,1.7,0,2V14
+c0,0.3,0.1,0.6,0.2,0.9l7.3-6.8L0.2,1.1z M15.5,9l-1.1,1c-1.3,1.2-3.6,1.2-4.9,0l-1-1l-7.3,6.8c0.2,0.1,0.6,0.2,1,0.2H22
+c0.4,0,0.6-0.1,1-0.2L15.5,9z"></path></svg><img></span>&nbsp;ezahirovic3@etf.unsa.ba
+      </a>
+    </div></footer>
+
+    <script>
+      function addOption(kat) {
+        var options;
+        var kat1 =["Moler","Gipsar","Fasader","Zidar","Parketar","Keramičar","Građevinski limar","Varilac","Građevinski stolar","Izolater","Tesar","Izrada bazena i fontana","Pomoćni radnik","Postavljanje podnih površina","Sječenje i bušenje","Armirač","Bravar-monter"];
+        var kat2 =["Električar","Vikler elektromotora","Servis liftova","Monter klima uređaja","Audio-video serviser","Serviser mobilnih telefona","Serviser računara"];
+        var kat3 =["Spremačica","Čistač","Perač podnih površina","Odžačar","Baštovan","Drvosječa","Visinski radnik","Perač fasada","Haus majstor / Domar"];
+        var kat4 =["Vodoinstalater","Monter grijnih instalacija","Ventilacioni sistemi"];
+        var kat5 =["Ključar","Tapetar","Metalostrugar","Stolar","Staklorezac","Grnčar","Kamenorezac","Mašin-bravar","Kovač","Površinska obrada","Livac","Uramljivač","Metaloglodač","Metalooštrač","Pečatorezac"];
+        var kat6 =["Krojač","Obućar","Tašner","Sajdžija - Časovničar","Juvelir - Zlatar","Mašinski vez","Ručni vez","Krznar","Šeširdžija","Serviser šivaćih mašina"];
+        var kat7 =["Auto električar","Auto limar","Auto bravar","Auto mehaničar","Serviser autogas sistema","Auto grafičar","Auto tapetar","Auto perač","Vulkanizer","Šlep služba","Serviser trapa","Auto stakla","Auto plastičar","Serviser auspuha","Serviser motocikala"];
+        var kat8 =["Vozač","Transport selidbi","Fizički radnik","Grafičar","Firmopisac","Serviser za bicikle","Ski serviser","Serviser medicinske opreme","Roletne i venecijaneri"]; 
+        $("#podkategorija").empty();
+          switch (kat) {
+            case 1:
+            options=kat1;    
+              break;
+            case 2:
+            options=kat2;    
+              break;
+            case 3:
+            options=kat3;    
+              break;
+            case 4:
+            options=kat4;    
+              break;
+            case 5:
+            options=kat5;    
+              break;
+            case 6:
+            options=kat6;    
+              break;
+            case 7:
+            options=kat7;    
+              break;
+            case 8:
+            options=kat8;    
+              break;
+            case "Građevinski radovi":
+            options=kat1;    
+              break;
+            case "Elektrika":
+            options=kat2;    
+              break;
+            case "Održavanje":
+            options=kat3;    
+              break;
+            case "Cjevne instalacije":
+            options=kat4;    
+              break;
+            case "Obrada materijala":
+            options=kat5;    
+              break;
+            case "Garderoba i nakit":
+            options=kat6;    
+              break;
+            case "Održavanje vozila":
+            options=kat7;    
+              break;
+            case "Nekategorizovano":
+            options=kat8;    
+              break;
+          }
+          $('#podkategorija').append($('<option>').text("Izaberi podkategoriju"));
+          for(var optionText of options)
+          $('#podkategorija').append($('<option>').text(optionText));
+            
+          document.getElementById("lista").style.visibility = "hidden"; 
+      }
+      $('#podkategorija').change(function(){
+          document.getElementById("lista").style.visibility = "visible"; 
+        var kat = $('#podkategorija').val();
+        $('#usluga1').text(kat+" usluga 1");
+        $('#usluga2').text(kat+" usluga 2");
+        $('#usluga3').text(kat+" usluga 3");
+        $('#usluga4').text(kat+" usluga 4");
+      });
+
+      function prijebrisanja(){
+        Swal.fire({
+          title: 'Da li ste sigurni?',
+          text: "Nećete moći povratiti podatke nakon brisanja!",
+          icon: 'warning',
+          showCancelButton: true,
+          cancelButtonText:'Odustani',
+          confirmButtonColor: '#d33',
+          cancelButtonColor: '#3085d6',
+          confirmButtonText: 'Da, obriši!'
+        }).then((result) => {
+          if (result.isConfirmed) {
+            obrisi();
+          }
+        })
+      }
+
+      function obrisi(){
+        const urlParams = new URLSearchParams(window.location.search);
+        const myParam = urlParams.get('id');
+        var kat = $('#category').val();
+        var myKeyVals = {id:myParam, kategorija:kat}
+
+          $.ajax({
+              type: 'POST',
+              url: "obrisi.php",
+              data: myKeyVals,
+              success: function(){
+                Swal.fire(
+              'Obrisano!',
+              'Vaš profil je obrisan.',
+              'success'
+            ).then(function() {
+              window.location.replace("Home.html");
+            })
+              }
+          });
+      }
+        
+      function prijeSlanja(){
+        var ime = $('#name').val();
+        var prez = $('#lname').val();
+        var em = $('#email').val();
+        var te = $('#telefon').val();
+        var pas = $('#pass').val();
+        var pas2 = $('#repass').val();
+        var adr = $('#adresa').val();
+        var ponod = $('#pon-od').val();
+        var pondo = $('#pon-do').val();
+        var utod = $('#uto-od').val();
+        var utdo = $('#uto-do').val();
+        var sriod = $('#sri-od').val();
+        var srido = $('#sri-do').val();
+        var ceto = $('#cet-od').val();
+        var cetdo = $('#cet-do').val();
+        var peto = $('#pet-od').val();
+        var petdo = $('#pet-do').val();
+        var subo = $('#sub-od').val();
+        var subdo = $('#sub-do').val();
+        var nedo = $('#ned-od').val();
+        var ned = $('#ned-do').val();
+
+        if(ime ==""){
+            Swal.fire({
+              icon: 'error',
+              title: 'Oops...',
+              text: 'Niste unijeli ime'
+            }).then(function() {
+              document.getElementById("name").focus();
+            document.getElementById("name").classList.add('warning');
+            })
+          }else if(prez==""){
+            Swal.fire({
+              icon: 'error',
+              title: 'Oops...',
+              text: 'Niste unijeli prezime'
+            }).then(function() {
+              document.getElementById("lname").focus();
+            document.getElementById("lname").classList.add('warning');
+            })
+          }else if(em==""){
+            Swal.fire({
+              icon: 'error',
+              title: 'Oops...',
+              text: 'Niste unijeli email'
+            }).then(function() {
+              document.getElementById("email").focus();
+            document.getElementById("email").classList.add('warning');
+            })
+          }else if(te==""){
+            Swal.fire({
+              icon: 'error',
+              title: 'Oops...',
+              text: 'Niste unijeli telefon'
+            }).then(function() {
+              document.getElementById("telefon").focus();
+            document.getElementById("telefon").classList.add('warning');
+            })
+          }else if(adr==""){
+            Swal.fire({
+              icon: 'error',
+              title: 'Oops...',
+              text: 'Niste unijeli adresu'
+            }).then(function() {
+              document.getElementById("adresa").focus();
+            document.getElementById("adresa").classList.add('warning');
+            })
+          }else if(pas==""){
+            Swal.fire({
+              icon: 'error',
+              title: 'Oops...',
+              text: 'Niste unijeli lozinku'
+            }).then(function() {
+              document.getElementById("pass").focus();
+            document.getElementById("pass").classList.add('warning');
+            })
+          }else if(pas!=pas2){
+            Swal.fire({
+              icon: 'error',
+              title: 'Oops...',
+              text: 'Niste unijeli istu lozinku dvaput'
+            }).then(function() {
+              document.getElementById("repass").focus();
+            document.getElementById("repass").classList.add('warning');
+            })
+          }else if (isNaN(te)) {
+                validate=false;
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                html: 'Niste unijeli ispravan broj telefona<br> Unesite samo cifre'
+            }).then(function() {
+            document.getElementById("telefon").focus();
+            document.getElementById("telefon").classList.add('warning');
+            })
+          }else if((ponod!='--' && pondo!='--' && ponod>=pondo) || (ponod=='--' && ponod!=pondo) || (pondo=='--' && ponod!=pondo)){
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Pogrešan unos radnog vremena za ponedjeljak'
+            })
+            document.getElementById("pon-od").classList.add('warning');
+            document.getElementById("pon-do").classList.add('warning');
+            formnumber--;
+            update_form();
+            progress_backward();
+        }else if((utod!='--' && utdo!='--' && utod>=utdo) || (utod=='--' && utod!=utdo)|| (utdo=='--' && utod!=utdo)){
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Pogrešan unos radnog vremena za utorak'
+            })
+            document.getElementById("uto-od").classList.add('warning');
+            document.getElementById("uto-do").classList.add('warning');
+            formnumber--;
+            update_form();
+            progress_backward();
+        }else if((sriod!='--' && srido!='--' && sriod>=srido) || (sriod=='--' && sriod!=srido)|| (srido=='--' && sriod!=srido)){
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Pogrešan unos radnog vremena za srijedu'
+            })
+            document.getElementById("sri-od").classList.add('warning');
+            document.getElementById("sri-do").classList.add('warning');
+            formnumber--;
+            update_form();
+            progress_backward();
+        }else if((ceto!='--' && cetdo!='--' && ceto>=cetdo) || (ceto=='--' && ceto!=cetdo) || (cetdo=='--' && ceto!=cetdo)){
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Pogrešan unos radnog vremena za četvrtak'
+            })
+            document.getElementById("cet-od").classList.add('warning');
+            document.getElementById("cet-do").classList.add('warning');
+            formnumber--;
+            update_form();
+            progress_backward();
+        }else if((peto!='--' && petdo!='--' && peto>=petdo) || (peto=='--' && peto!=petdo) || (petdo=='--' && peto!=petdo)){
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Pogrešan unos radnog vremena za petak'
+            })
+            document.getElementById("pet-od").classList.add('warning');
+            document.getElementById("pet-do").classList.add('warning');
+            formnumber--;
+            update_form();
+            progress_backward();
+        }else if((subo!='--' && subdo!='--' && subo>=subdo) || (subo=='--' && subo!=subdo) || (subdo=='--' && subo!=subdo)){
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Pogrešan unos radnog vremena za subotu'
+            })
+            document.getElementById("sub-od").classList.add('warning');
+            document.getElementById("sub-do").classList.add('warning');
+            formnumber--;
+            update_form();
+            progress_backward();
+        }else if((nedo!='--' && ned!='--' && nedo>=ned) || (nedo=='--' && nedo!=ned) || (ned=='--' && nedo!=ned)){
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Pogrešan unos radnog vremena za nedjelju'
+            })
+            document.getElementById("ned-od").classList.add('warning');
+            document.getElementById("ned-do").classList.add('warning');
+            formnumber--;
+            update_form();
+            progress_backward();
+        }else{
+          posalji();
+          }
+      }
+
+      function posalji(){
+        var im = $('#name').val();
+        var prez = $('#lname').val();
+        var em = $('#email').val();
+        var te = $('#telefon').val();
+        var pas = $('#pass').val();
+        var lok = $('#lok').val();
+        var adr = $('#adresa').val();
+        var kat = $('#category').val();
+        var podk = $('#podkategorija').val();
+        var us1=0;
+        var us2=0;
+        var us3=0;
+        var us4=0;
+        if($('#usluga-1').is(':checked'))
+        us1=1;
+        if($('#usluga-2').is(':checked'))
+        us2=1;
+        if($('#usluga-3').is(':checked'))
+        us3=1;
+        if($('#usluga-4').is(':checked'))
+        us4=1;
+        var op = $('#opis').val();
+        var ponod = $('#pon-od').val();
+        var pondo = $('#pon-do').val();
+        var utod = $('#uto-od').val();
+        var utdo = $('#uto-do').val();
+        var sriod = $('#sri-od').val();
+        var srido = $('#sri-do').val();
+        var ceto = $('#cet-od').val();
+        var cetdo = $('#cet-do').val();
+        var peto = $('#pet-od').val();
+        var petdo = $('#pet-do').val();
+        var subo = $('#sub-od').val();
+        var subdo = $('#sub-do').val();
+        var nedo = $('#ned-od').val();
+        var ned = $('#ned-do').val();
+        const urlParams = new URLSearchParams(window.location.search);
+        const myParam = urlParams.get('id');
+        var myKeyVals = {id:myParam, ime : im, prezime : prez, email : em, telefon : te, lozinka : pas, lokacija : lok, adresa:adr, 
+          kategorija:kat, podkategorija:podk,usluga1:us1,usluga2:us2,usluga3:us3,usluga4:us4,opis:op, 
+          pon_od:ponod,pon_do:pondo,uto_od:utod,uto_do:utdo,sri_od:sriod,sri_do:srido,cet_od:ceto,cet_do:cetdo,pet_od:peto,pet_do:petdo,
+          sub_od:subo,sub_do:subdo,ned_od:nedo,ned_do:ned}
+
+          $.ajax({
+              type: 'POST',
+              url: "izmjena.php",
+              data: myKeyVals,
+              success: function(){
+                Swal.fire({
+                icon: 'success',
+                title: 'Vaše izmjene su spremljene',
+                showConfirmButton: false,
+                timer: 2000
+              })
+              }
+          });
+        }
+
+$(document).ready(function(){
+  $.ajax({
+   url:"majstor.csv",
+   dataType:"text",
+   success:function(data)
+   {
+    var employee_data = data.split(/\r?\n|\r/);
+    const urlParams = new URLSearchParams(window.location.search);
+    const myParam = urlParams.get('id');
+    if(myParam>1){
+    for(var count = 0; count<employee_data.length; count++)
+    {
+     var cell_data = employee_data[count].split(",");
+     var id = cell_data[0].replaceAll("_","");
+     for(var i=0;i<cell_data.length;i++){
+       cell_data[i]=cell_data[i].replaceAll("_","");
+     }
+     if(id==myParam){
+         var adr = cell_data[7].replaceAll("%2C",",");
+         var opi = cell_data[14].replaceAll("%2C",",");
+         $("#name").val(cell_data[1]);
+         $("#lname").val(cell_data[2]);
+        $("#email").val(cell_data[3]);
+        $("#telefon").val(cell_data[4]);
+        $("#pass").val(cell_data[5]);
+        $("#repass").val(cell_data[5]);
+        $("#lok").val(cell_data[6]);
+        $("#adresa").val(adr);
+        $("#category").val(cell_data[8]);
+        addOption(cell_data[8]);
+        $("#podkategorija").val(cell_data[9]);
+        $('#podkategorija').trigger('change');
+        if(cell_data[10]==1)
+        $('#usluga-1').prop('checked', true);
+        if(cell_data[11]==1)
+        $('#usluga-2').prop('checked', true);
+        if(cell_data[12]==1)
+        $('#usluga-3').prop('checked', true);
+        if(cell_data[13]==1)
+        $('#usluga-4').prop('checked', true);
+        $("#opis").text(opi);
+        $('#pon-od').val(cell_data[15]);
+        $('#pon-do').val(cell_data[16]);
+        $('#uto-od').val(cell_data[17]);
+        $('#uto-do').val(cell_data[18]);
+        $('#sri-od').val(cell_data[19]);
+         $('#sri-do').val(cell_data[20]);
+         $('#cet-od').val(cell_data[21]);
+        $('#cet-do').val(cell_data[22]);
+        $('#pet-od').val(cell_data[23]);
+         $('#pet-do').val(cell_data[24]);
+         $('#sub-od').val(cell_data[25]);
+        $('#sub-do').val(cell_data[26]);
+        $('#ned-od').val(cell_data[27]);
+        $('#ned-do').val(cell_data[28]);
+        }
+      }
+    }}
+  });
+});
+      </script>
+
+  </body>
+</html>
